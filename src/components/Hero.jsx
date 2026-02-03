@@ -17,7 +17,7 @@ const Hero = () => {
             </div>
 
             <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 mt-10 md:mt-0">
-                <div className="max-w-3xl text-center md:text-left mx-auto md:mx-0">
+                <div className="max-w-3xl text-left">
 
 
                     <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight drop-shadow-lg">
@@ -26,11 +26,11 @@ const Hero = () => {
                         to the World
                     </h1>
 
-                    <p className="mt-6 text-lg md:text-xl text-gray-200 mb-12 font-light max-w-2xl leading-relaxed mx-auto md:mx-0 drop-shadow-md">
+                    <p className="mt-6 text-lg md:text-xl text-gray-200 mb-12 font-light max-w-2xl leading-relaxed drop-shadow-md">
                         Premium quality spices, textiles, and agricultural products delivered with reliability and speed across the globe.
                     </p>
 
-                    <div className="flex flex-row justify-center md:justify-start gap-4 items-center w-full">
+                    <div className="flex flex-row gap-4 items-center w-full">
                         <motion.a
                             href="#products"
                             whileHover={{ scale: 1.02 }}
