@@ -29,8 +29,17 @@ const Fruits = () => {
     );
 
     return (
-        <div className="pt-24 pb-16 min-h-screen">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="pt-24 pb-16 min-h-screen relative overflow-hidden">
+            {/* Background Image specific for Fruits page */}
+            <div className="absolute inset-0 z-0 opacity-5 pointer-events-none">
+                <img
+                    src="/images/fruits_bg_test.jpg"
+                    alt=""
+                    className="w-full h-full object-cover"
+                />
+            </div>
+
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
                 {/* Header - Simple & Clean */}
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-16">
