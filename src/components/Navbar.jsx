@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, ArrowRight } from 'lucide-react';
+import { Menu, X, ArrowRight, ArrowLeft } from 'lucide-react';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -45,10 +45,17 @@ const Navbar = () => {
                         <div className="flex items-center py-4">
 
                             {/* Logo */}
+                            {/* Logo or Back to Home for Product Pages */}
                             <div className="flex-shrink-0 flex items-center gap-2">
-                                <Link to="/" className={`font-main font-bold text-2xl tracking-tighter transition-colors ${scrolled || isOpen ? 'text-gray-900' : 'text-gray-900'}`}>
-                                    KARMYOG
-                                </Link>
+                                {location.pathname.startsWith('/products/') ? (
+                                    <Link to="/" className={`font-medium text-lg flex items-center gap-2 transition-colors hover:text-brand-cyan ${scrolled || isOpen ? 'text-gray-900' : 'text-gray-900'}`}>
+                                        <ArrowLeft size={20} /> Back to Home
+                                    </Link>
+                                ) : (
+                                    <Link to="/" className={`font-main font-bold text-2xl tracking-tighter transition-colors ${scrolled || isOpen ? 'text-gray-900' : 'text-gray-900'}`}>
+                                        KARMYOG
+                                    </Link>
+                                )}
                             </div>
 
                             {/* Spacer to push everything else to the right */}

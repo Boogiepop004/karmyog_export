@@ -18,15 +18,12 @@ const Textile = () => {
     );
 
     return (
-        <div className="pt-24 pb-16 min-h-screen">
+        <div className="pt-20 pb-16 min-h-screen">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* Header */}
-                <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-16">
+                <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8">
                     <div>
-                        <Link to="/" className="inline-flex items-center text-gray-500 hover:text-brand-black mb-4 transition-colors">
-                            <ArrowLeft size={20} className="mr-2" /> Back to Home
-                        </Link>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
                             Textile
                         </h1>
