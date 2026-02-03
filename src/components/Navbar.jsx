@@ -117,9 +117,11 @@ const Navbar = () => {
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: 'auto' }}
-                        exit={{ opacity: 0, height: 0 }}
+                    <motion.div
+                        initial={{ opacity: 0, y: '-100%' }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: '-100%' }}
+                        transition={{ duration: 0.3, ease: 'easeInOut' }}
                         className="fixed top-0 left-0 right-0 z-40 bg-white pt-24 pb-8 px-6 md:hidden shadow-xl rounded-b-[2rem] overflow-hidden"
                     >
                         <div className="flex flex-col space-y-4">
