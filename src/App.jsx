@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Enquiry from './pages/Enquiry';
 import Fruits from './pages/Fruits';
 import Spices from './pages/Spices';
+import Vegetables from './pages/Vegetables';
 import Textile from './pages/Textile';
 
 import ScrollToTop from './components/ScrollToTop';
@@ -29,6 +30,7 @@ function App() {
                     } />
                     <Route path="/enquiry" element={<Enquiry />} />
                     <Route path="/products/fruits" element={<Fruits />} />
+                    <Route path="/products/vegetables" element={<Vegetables />} />
                     <Route path="/products/spices" element={<Spices />} />
                     <Route path="/products/textile" element={<Textile />} />
                 </Routes>

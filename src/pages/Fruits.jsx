@@ -8,7 +8,7 @@ const fruits = [
     { id: 2, name: 'Dry Semi Husked Coconut', image: '/images/fruits/product_coconut_dry_real.png' }, // User provided real image
     { id: 3, name: 'G9 Banana (Green)', image: '/images/fruits/product_banana_g9_green_real.png' }, // User provided real image
     { id: 4, name: 'G9 Banana (Yellow)', image: '/images/fruits/product_banana_g9_yellow_new.jpg' },
-    { id: 5, name: 'Banana Leaf', image: '/images/fruits/product_banana_leaf_new.jpg' },
+    { id: 5, name: 'Banana Leaf', image: '/images/fruits/product_banana_leaf_real.png' },
     { id: 6, name: 'Green Grapes', image: '/images/fruits/product_grapes_green_new.png' },
     { id: 7, name: 'Red Globe Grapes', image: '/images/fruits/product_grapes_red_new.png' },
     { id: 8, name: 'Black Grapes', image: '/images/fruits/product_grapes_black_new.png' },

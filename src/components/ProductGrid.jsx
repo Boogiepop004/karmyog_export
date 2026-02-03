@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 const products = [
     { id: 1, name: 'Spices', category: 'Spices', image: '/images/home/spices_cover.png', link: '/products/spices', desc: '' }, // Updated to Image Card
-    { id: 2, name: 'Vegetables', category: 'Agriculture', image: '/images/home/vegetables_cover.png', desc: '' },
+    { id: 2, name: 'Vegetables', category: 'Agriculture', image: '/images/home/vegetables_cover.png', link: '/products/vegetables', desc: '' },
     { id: 3, name: 'Fruits', category: 'Agriculture', image: '/images/home/fruits_cover.png', link: '/products/fruits', desc: '' },
     { id: 4, name: 'Cereals & Pulses', category: 'Grains', image: '/images/home/cereals_cover.png', desc: '' }, // Image Card
     { id: 5, name: 'Textile', category: 'Garments', image: '/images/home/textiles_cover.png', link: '/products/textile', desc: '' }, // Image Card
