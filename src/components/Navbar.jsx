@@ -36,10 +36,10 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 w-full`}>
+            <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ease-in-out w-full`}>
                 <div className={`
-                    w-full transition-all duration-200 border-b border-transparent
-                    ${isOpen ? 'bg-white shadow-sm border-gray-100' : (scrolled ? 'bg-white/90 backdrop-blur-md shadow-sm border-gray-100' : 'bg-transparent')}
+                    w-full transition-all duration-200 ease-in-out border-b border-transparent
+                    ${scrolled || isOpen ? 'bg-white/95 backdrop-blur-sm shadow-sm border-gray-100' : 'bg-transparent'}
                 `}>
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="flex items-center py-4">
@@ -48,11 +48,11 @@ const Navbar = () => {
                             {/* Logo or Back to Home for Product Pages */}
                             <div className="flex-shrink-0 flex items-center gap-2">
                                 {location.pathname.startsWith('/products/') ? (
-                                    <Link to="/" className={`font-medium text-lg flex items-center gap-2 transition-colors hover:text-brand-cyan ${scrolled || isOpen ? 'text-gray-900' : 'text-gray-900'}`}>
+                                    <Link to="/" className={`font-medium text-lg flex items-center gap-2 transition-colors duration-200 ${scrolled || isOpen ? 'text-gray-900' : 'text-white hover:text-brand-cyan'}`}>
                                         <ArrowLeft size={20} /> Back to Home
                                     </Link>
                                 ) : (
-                                    <Link to="/" className={`font-main font-bold text-2xl tracking-tighter transition-colors ${scrolled || isOpen ? 'text-gray-900' : 'text-gray-900'}`}>
+                                    <Link to="/" className={`font-main font-bold text-2xl tracking-tighter transition-colors duration-200 ${scrolled || isOpen ? 'text-gray-900' : 'text-white'}`}>
                                         KARMYOG
                                     </Link>
                                 )}
@@ -74,7 +74,7 @@ const Navbar = () => {
                                         <Component
                                             key={link.name}
                                             {...props}
-                                            className={`text-[15px] font-medium transition-colors hover:text-brand-cyan ${scrolled ? 'text-gray-900' : 'text-gray-900'}`}
+                                            className={`text-[15px] font-medium transition-colors duration-200 hover:text-brand-cyan ${scrolled ? 'text-gray-900' : 'text-white'}`}
                                         >
                                             {link.name}
                                         </Component>
@@ -87,10 +87,10 @@ const Navbar = () => {
                                 {!isEnquiryPage && (
                                     <Link
                                         to="/enquiry"
-                                        className={`px-6 py-2.5 rounded-full text-sm font-semibold transition-all flex items-center gap-2 border group
+                                        className={`px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 flex items-center gap-2 border group
                                             ${scrolled
                                                 ? 'bg-gray-100/80 text-gray-900 border-gray-200 hover:bg-gray-200'
-                                                : 'bg-brand-black/50 backdrop-blur-md text-white border-transparent hover:bg-brand-black/70 transition-all'
+                                                : 'bg-white/10 backdrop-blur-md text-white border-white/20 hover:bg-white/20'
                                             }
                                         `}
                                     >
@@ -103,7 +103,7 @@ const Navbar = () => {
                             <div className="flex md:hidden ml-4">
                                 <button
                                     onClick={() => setIsOpen(!isOpen)}
-                                    className="p-2 text-gray-900 focus:outline-none"
+                                    className={`p-2 focus:outline-none transition-colors duration-200 ${scrolled || isOpen ? 'text-gray-900' : 'text-white'}`}
                                 >
                                     {isOpen ? <X size={24} /> : <Menu size={24} />}
                                 </button>
@@ -117,10 +117,10 @@ const Navbar = () => {
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
-                        initial={{ opacity: 0, y: -10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -10 }}
-                        transition={{ duration: 0.2, ease: "easeOut" }}
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: 'auto' }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.2, ease: "easeInOut" }}
                         className="fixed top-[72px] left-0 right-0 z-40 bg-white shadow-xl border-t border-gray-100 overflow-hidden md:hidden"
                     >
                         <div className="flex flex-col p-6 space-y-4">
