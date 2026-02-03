@@ -31,7 +31,7 @@ const Fruits = () => {
     return (
         <div className="pt-24 pb-16 min-h-screen relative">
             {/* Background Image specific for Fruits page */}
-            <div className="fixed inset-0 z-0 opacity-10 pointer-events-none">
+            <div className="fixed inset-0 z-0 opacity-20 pointer-events-none">
                 <img
                     src="/images/fruits_bg_test.jpg"
                     alt=""
