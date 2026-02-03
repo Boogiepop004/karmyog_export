@@ -10,7 +10,6 @@ body {
     font-family: var(--font-main);
     background-color: #FFFFFF;
     color: #1F2937;
-    overflow-x: hidden;
 }
 
 /* Custom Scrollbar */
