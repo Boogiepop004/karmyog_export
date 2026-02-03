@@ -6,7 +6,6 @@ const vegetables = [
     { id: 2, name: 'Elephant Yam (Suran)', image: '/images/vegetables/product_elephant_yam_suran.png' },
     { id: 3, name: 'Green Chilli (G4)', image: '/images/vegetables/product_green_chilli_g4.png' },
     { id: 4, name: 'Lime', image: '/images/vegetables/product_lime.png' },
-    { id: 6, name: 'Ginger', image: '/images/vegetables/product_ginger.jpg' },
     { id: 7, name: 'Tomato', image: '/images/vegetables/product_tomato.jpg' },
     { id: 8, name: 'Turmeric Root', image: '/images/vegetables/product_turmeric_root.jpg' },
     { id: 9, name: 'Okra (Bhindi)', image: '/images/vegetables/product_okra_bhindi.png' },

@@ -14,6 +14,7 @@ const spices = [
     { id: 8, name: 'Cloves (Laung)', image: '/images/spices/product_cloves.png' },
     { id: 9, name: 'Garlic (Fresh & Dehydrated)', image: '/images/spices/product_garlic.png' },
     { id: 10, name: 'Turmeric', image: '/images/spices/product_turmeric.jpg' },
+    { id: 11, name: 'Ginger', image: '/images/spices/product_ginger.jpg' },
 ];
 
 const Spices = () => {
