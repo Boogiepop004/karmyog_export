@@ -18,15 +18,15 @@ const ProductGrid = () => {
         <section id="products" className="py-24 bg-brand-gray/30">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 md:mb-16 gap-6">
                     <div className="max-w-2xl">
                         <h4 className="text-brand-cyan font-bold tracking-wide uppercase text-sm mb-2">What We Do</h4>
-                        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+                        <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
                             Exporting Excellence <br /> Across Borders
                         </h2>
                     </div>
 
-                    <div className="self-end md:self-auto">
+                    <div className="self-start md:self-auto">
                         <button className="text-gray-900 font-bold border-b-2 border-brand-cyan pb-1 hover:text-brand-cyan transition-colors flex items-center gap-2">
                             View All Products <ArrowUpRight size={18} />
                         </button>
