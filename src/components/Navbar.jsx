@@ -18,6 +18,11 @@ const Navbar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    // Reset scroll state on route change to prevent flash of title
+    useEffect(() => {
+        setScrolled(false);
+    }, [location.pathname]);
+
     const navLinks = [
         { name: 'Home', href: '/' },
         { name: 'Products', href: '/#products' },
