@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en-IN" data-website-id="1" data-main-object="website.page(9,)">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="generator" content="Odoo"/>
+        <meta name="description" content="✅ Completely Private | 🔒 Secure | 📧 Instant Notifications"/>
+        <meta name="keywords" content="requirements sanskriti,sanskriti global,let&#39;s connect,india without,exports,import,guesswork"/>
+            
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="For Importers | sgexports"/>
+        <meta property="og:site_name" content="sgexports"/>
+        <meta property="og:url" content="https://www.sgeexport.com/importers"/>
+        <meta property="og:image" content="https://sgexports.odoo.com/web/image/website/1/logo?unique=fe4c9ba"/>
+        <meta property="og:description" content="✅ Completely Private | 🔒 Secure | 📧 Instant Notifications"/>
+            
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:title" content="For Importers | sgexports"/>
+        <meta name="twitter:image" content="https://sgexports.odoo.com/web/image/website/1/logo?unique=fe4c9ba"/>
+        <meta name="twitter:description" content="✅ Completely Private | 🔒 Secure | 📧 Instant Notifications"/>
+        
+        <link rel="canonical" href="https://sgexports.odoo.com/importers"/>
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""/>
+        <title>For Importers | sgexports</title>
+        <link type="image/x-icon" rel="shortcut icon" href="/web/image/website/1/favicon?unique=2f7f895"/>
+        <link rel="preload" href="/web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" crossorigin=""/>
+        <link type="text/css" rel="stylesheet" href="/web/assets/1/b740d16/web.assets_frontend.min.css"/>
+        <script id="web.layout.odooscript" type="text/javascript">
+            var odoo = {
+                csrf_token: "a96cbfec559b309b2b3cd20fde33cee7a7d13c6do1801279733",
+                debug: "",
+            };
+        </script>
+        <script type="text/javascript">
+            odoo.__session_info__ = {"is_admin": false, "is_system": false, "is_public": true, "is_internal_user": false, "is_website_user": true, "uid": null, "registry_hash": "04ae59683d2602f0a4ee6aed6cf66a13165221b2eae8e1fd2b8c17d2e16d728e", "is_frontend": true, "profile_session": null, "profile_collectors": null, "profile_params": null, "show_effect": true, "currencies": {"20": {"symbol": "\u20b9", "position": "before", "digits": [69, 2]}}, "quick_login": true, "bundle_params": {"lang": "en_IN", "website_id": 1}, "test_mode": false, "websocket_worker_version": "saas-18.4-2", "translationURL": "/website/translations", "geoip_country_code": "IN", "geoip_phone_code": 91, "lang_url_code": "en_IN"};
+            if (!/(^|;\s)tz=/.test(document.cookie)) {
+                const userTZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                document.cookie = `tz=${userTZ}; path=/`;
+            }
+        </script>
+        <script type="text/javascript" defer="defer" src="/web/assets/1/8223dea/web.assets_frontend_minimal.min.js" onerror="__odooAssetError=1"></script>
+        <script type="text/javascript" defer="defer" data-src="/web/assets/1/154292a/web.assets_frontend_lazy.min.js" onerror="__odooAssetError=1"></script>
+        
+                    <script>
+                        
+            
+                if (!window.odoo) {
+                    window.odoo = {};
+                }
+                odoo.__session_info__ = odoo.__session_info__ || {
+                    websocket_worker_version: "saas-18.4-2"
+                }
+                odoo.__session_info__ = Object.assign(odoo.__session_info__, {
+                    livechatData: {
+                        can_load_livechat: false,
+                        serverUrl: "https://sgexports.odoo.com",
+                        options: {},
+                    },
+                    test_mode: false,
+                });
+            
+                    </script>
+        
+    </head>
+    <body>
+                
+
+
+
+        <div id="wrapwrap" class="   ">
+            <a class="o_skip_to_content btn btn-primary rounded-0 visually-hidden-focusable position-absolute start-0" href="#wrap">Skip to Content</a>
+                <header id="top" data-anchor="true" data-name="Header" data-extra-items-toggle-aria-label="Extra items button" class="   o_header_standard" style=" ">
+                    
+    <nav data-name="Navbar" aria-label="Main" class="navbar navbar-expand-lg navbar-light o_colored_level o_cc d-none d-lg-block p-0 shadow-sm ">
+        
+
+            <div id="o_main_nav" class="o_main_nav flex-wrap">
+                <div aria-label="Top" class="o_header_hide_on_scroll border-bottom o_border_contrast">
+                    <div class="container d-flex justify-content-between flex-wrap w-100">
+                        <ul class="o_header_search_left_col navbar-nav flex-wrap">
+                            
+        <li data-name="Language Selector" class="o_header_language_selector ">
+        
+        
+        </li>
+                            
+        <li class="">
+                <div data-name="Text" class="s_text_block d-flex align-items-center h-100 border-end p-2 text-muted o_border_contrast">
+                    <small><span class="o_animated_text o_animate o_anim_flash o_animate_both_scroll" style="--wanim-intensity: 67;">Simplifying Global Commerce, One Deal at a Time.</span></small>
+                </div>
+        </li>
+                        </ul>
+                        <ul class="navbar-nav flex-wrap">
+                            
+                            
+            <li class=" o_no_autohide_item">
+                <a href="/web/login" class="o_navlink_background_hover btn btn-sm d-flex align-items-center h-100 rounded-0 border-0 border-start px-3 text-reset o_border_contrast">Sign in</a>
+            </li>
+                            
+        
+        
+                        </ul>
+                    </div>
+                </div>
+                <div aria-label="Bottom" class="container d-grid align-items-center w-100 py-2 o_grid_header_3_cols">
+                    
+    <ul role="menu" id="top_menu" class="nav navbar-nav top_menu o_menu_loading  me-4 ">
+        
+
+                        
+
+    <li role="presentation" class="nav-item ">
+        <a role="menuitem" href="/" class="nav-link ">
+            <span>Home</span>
+        </a>
+    </li>
+
+    <li role="presentation" class="nav-item ">
+        <a role="menuitem" href="/importers" class="nav-link active">
+            <span>Importers</span>
+        </a>
+    </li>
+
+    <li role="presentation" class="nav-item ">
+        <a role="menuitem" href="/exporters" class="nav-link ">
+            <span>Exporters</span>
+        </a>
+    </li>
+
+    <li role="presentation" class="nav-item ">
+        <a role="menuitem" href="/blog/our-blog-1" class="nav-link ">
+            <span>Blogs</span>
+        </a>
+    </li>
+
+    <li role="presentation" class="nav-item ">
+        <a role="menuitem" href="/blog/news-2" class="nav-link ">
+            <span>News</span>
+        </a>
+    </li>
+
+    <li role="presentation" class="nav-item ">
+        <a role="menuitem" href="/about-us" class="nav-link ">
+            <span>About Us</span>
+        </a>
+    </li>
+                    
+    </ul>
+                    
+    <a data-name="Navbar Logo" href="/" class="navbar-brand logo mw-100 mx-auto">
+            
+            <span role="img" aria-label="Logo of sgexports" title="sgexports"><img src="/web/image/website/1/logo/sgexports?unique=2f7f895" class="img img-fluid" width="95" height="40" alt="sgexports" loading="lazy"/></span>
+        </a>
+    
+                    <ul class="o_header_search_right_col navbar-nav align-items-center gap-2 ms-auto ps-3">
+                        
+                        
+        <li class="">
+    <form method="get" class="o_searchbar_form s_searchbar_input " action="/website/search" data-snippet="s_searchbar_input">
+            <div role="search" class="input-group ">
+        <input type="search" name="search" class="search-query form-control oe_search_box rounded-start-pill ps-3 text-bg-light border-0 bg-light" placeholder="Search..." data-search-type="all" data-limit="5" data-display-image="true" data-display-description="true" data-display-extra-link="true" data-display-detail="true" data-order-by="name asc"/>
+        <button type="submit" aria-label="Search" title="Search" class="btn oe_search_button rounded-end-pill pe-3 bg-o-color-3">
+            <i class="oi oi-search"></i>
+        </button>
+    </div>
+
+            <input name="order" type="hidden" class="o_search_order_by" value="name asc"/>
+            
+    
+        </form>
+        </li>
+                        
+        <li class="">
+            <div class="oe_structure oe_structure_solo ">
+                <section class="oe_unremovable oe_unmovable s_text_block o_colored_level" data-snippet="s_text_block" data-name="Text">
+                    <div class="container">
+                        <a href="/contactus" class="oe_unremovable btn btn-primary btn_cta">Contact Us</a>
+                    </div>
+                </section>
+            </div>
+        </li>
+                    </ul>
+                </div>
+            </div>
+        
+    </nav>
+    <nav data-name="Navbar" aria-label="Mobile" class="navbar  navbar-light o_colored_level o_cc o_header_mobile d-block d-lg-none shadow-sm ">
+        
+
+        <div class="o_main_nav container flex-wrap justify-content-between">
+            <div class="d-flex flex-grow-1">
+                
+    <a data-name="Navbar Logo" href="/" class="navbar-brand logo ">
+            
+            <span role="img" aria-label="Logo of sgexports" title="sgexports"><img src="/web/image/website/1/logo/sgexports?unique=2f7f895" class="img img-fluid" width="95" height="40" alt="sgexports" loading="lazy"/></span>
+        </a>
+    
+                <ul class="o_header_mobile_buttons_wrap navbar-nav d-flex flex-row align-items-center gap-2 mb-0 ms-auto"></ul>
+            </div>
+            <button class="nav-link btn p-2 o_not_editable" type="button" data-bs-toggle="offcanvas" data-bs-target="#top_menu_collapse_mobile" aria-controls="top_menu_collapse_mobile" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="top_menu_collapse_mobile" class="offcanvas offcanvas-end o_navbar_mobile">
+                <div class="offcanvas-header justify-content-end o_not_editable">
+                    <button type="button" class="nav-link btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-flex flex-column justify-content-between h-100 w-100 pt-0">
+                    <ul class="navbar-nav">
+                        
+                        
+        <li class="">
+    <form method="get" class="o_searchbar_form s_searchbar_input " action="/website/search" data-snippet="s_searchbar_input">
+            <div role="search" class="input-group mb-3">
+        <input type="search" name="search" class="search-query form-control oe_search_box rounded-start-pill text-bg-light ps-3 border-0 bg-light" placeholder="Search..." data-search-type="all" data-limit="0" data-display-image="true" data-display-description="true" data-display-extra-link="true" data-display-detail="true" data-order-by="name asc"/>
+        <button type="submit" aria-label="Search" title="Search" class="btn oe_search_button rounded-end-pill bg-o-color-3 pe-3">
+            <i class="oi oi-search"></i>
+        </button>
+    </div>
+
+            <input name="order" type="hidden" class="o_search_order_by" value="name asc"/>
+            
+    
+        </form>
+        </li>
+                        
+    <ul role="menu" class="nav navbar-nav top_menu  o_mega_menu_is_offcanvas mx-n3  ">
+        
+
+                            
+
+    <li role="presentation" class="nav-item border-top  px-0">
+        <a role="menuitem" href="/" class="nav-link p-3 text-wrap ">
+            <span>Home</span>
+        </a>
+    </li>
+
+    <li role="presentation" class="nav-item border-top  px-0">
+        <a role="menuitem" href="/importers" class="nav-link p-3 text-wrap active">
+            <span>Importers</span>
+        </a>
+    </li>
+
+    <li role="presentation" class="nav-item border-top  px-0">
+        <a role="menuitem" href="/exporters" class="nav-link p-3 text-wrap ">
+            <span>Exporters</span>
+        </a>
+    </li>
+
+    <li role="presentation" class="nav-item border-top  px-0">
+        <a role="menuitem" href="/blog/our-blog-1" class="nav-link p-3 text-wrap ">
+            <span>Blogs</span>
+        </a>
+    </li>
+
+    <li role="presentation" class="nav-item border-top  px-0">
+        <a role="menuitem" href="/blog/news-2" class="nav-link p-3 text-wrap ">
+            <span>News</span>
+        </a>
+    </li>
+
+    <li role="presentation" class="nav-item border-top border-bottom px-0">
+        <a role="menuitem" href="/about-us" class="nav-link p-3 text-wrap ">
+            <span>About Us</span>
+        </a>
+    </li>
+                        
+    </ul>
+                        
+        <li class="">
+                <div data-name="Text" class="s_text_block mt-2">
+                    <small><span class="o_animated_text o_animate o_anim_flash o_animate_both_scroll" style="--wanim-intensity: 67;">Simplifying Global Commerce, One Deal at a Time.</span></small>
+                </div>
+        </li>
+                        
+                    </ul>
+                    <ul class="navbar-nav gap-2 mt-3 w-100">
+                        
+        <li data-name="Language Selector" class="o_header_language_selector ">
+        
+        
+        </li>
+                        
+            <li class=" o_no_autohide_item">
+                <a href="/web/login" class="nav-link o_nav_link_btn w-100 border text-center">Sign in</a>
+            </li>
+                        
+        
+        
+                        
+        <li class="">
+            <div class="oe_structure oe_structure_solo ">
+                <section class="oe_unremovable oe_unmovable s_text_block o_colored_level" data-snippet="s_text_block" data-name="Text">
+                    <div class="container">
+                        <a href="/contactus" class="oe_unremovable btn btn-primary btn_cta w-100">Contact Us</a>
+                    </div>
+                </section>
+            </div>
+        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+    </nav>
+    
+        </header>
+                <main>
+                    
+        <div id="wrap" class="oe_structure oe_empty"><section class="s_parallax parallax s_parallax_is_fixed bg-black-50 o_colored_level o_half_screen_height" data-scroll-background-ratio="1" data-snippet="s_parallax">
+        <span class="s_parallax_bg oe_img_bg o_bg_img_center o_bg_img_origin_border_box" style="background-image: url(&#39;/web/image/website.s_parallax_default_image&#39;); background-position: 50% 75%;"></span>
+        <div class="o_we_bg_filter bg-black-50"><br/></div>
+        <div class="oe_structure oe_empty"><section class="s_shape_image pt32 pb32 o_colored_level o_cc o_cc2" data-snippet="s_shape_image" data-name="Shape image">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 pt16 pb16 o_colored_level shadow" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px !important;">
+                    <img src="/web/image/482-2e2391fd/ChatGPT%2520Image%2520Jul%252023%252C%25202025%252C%252005_06_08%2520PM.svg" alt="" data-attachment-id="481" class="img img-fluid o_we_custom_image o_animate o_anim_fade_in o_visible" data-format-mimetype="image/webp" data-original-id="481" data-original-src="/web/image/481-12e2cf0f/ChatGPT%20Image%20Jul%2023%2C%202025%2C%2005_06_08%20PM.png" data-mimetype-before-conversion="image/png" data-resize-width="690" data-shape-colors=";;;;" data-mimetype="image/webp" data-file-name="ChatGPT%20Image%20Jul%2023%2C%202025%2C%2005_06_08%20PM.svg" data-quality="100" style="animation-name: dummy;" loading="eager"/>
+                </div>
+                <div class="col-lg-6 offset-lg-1 pt16 pb16 o_colored_level">
+                    <h2 class="h3-fs">Import from India Without the Guesswork</h2>
+                    <p><br/>At Sanskriti Global Exports, we help international buyers connect with <strong>verified Indian exporters</strong> — with no listing fees, no middlemen, and no confusion.</p><span class="s_cta_badge d-inline-block my-3 border rounded py-2 px-3 o_cc o_cc1 o_animable o_colored_level" data-name="CTA Badge" style="border-radius: 32px !important;" data-snippet="s_cta_badge">
+        <i class="fa fa-fw fa-info-circle o_not-animable" role="img"></i>&nbsp; Let's Fill The Form, it's totally free&nbsp; &nbsp; &nbsp;&nbsp;</span></div>
+            </div>
+        </div>
+    </section><br/></div>
+    </section>
+    <section class="s_text_block pt40 pb0 o_colored_level" data-snippet="s_text_block">
+        <div class="container s_allow_columns">
+            <h1 style="text-align: center;">🛒 Import Requirements - Sanskriti Global Exports</h1>
+        </div>
+    </section><section class="s_title_form o_cc o_cc2 pt64 pb48 o_colored_level" data-snippet="s_title_form" data-name="Title - Form" id="Let&#39;s-Connect" data-anchor="true">
+        <div class="o_container_small">
+            <h2 class="text-center">Let's Connect</h2>
+            <div style="text-align: center;">Submit your import requirements privately. Our team will review and connect you with suitable Indian exporters within 24 hours.</div><div><br/></div><p class="text-center lead">✅ Completely Private | 🔒 Secure | 📧 Instant Notifications</p>
+    <section class="s_website_form pt16 pb16" data-vcss="001" data-snippet="s_website_form" data-name="Form">
+        <div class="container-fluid">
+            <form action="/website/form/" method="post" enctype="multipart/form-data" class="o_mark_required" data-mark="*" data-pre-fill="true" data-model_name="mail.mail" data-success-mode="redirect" data-success-page="/contactus-thank-you">
+                <div class="s_website_form_rows row s_col_no_bgcolor">
+                    
+                    <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required" data-type="char"><div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="oldv13bcqh0c"><span class="s_website_form_label_content">Your Name</span><span class="s_website_form_mark"> *</span></label><div class="col-sm"><input class="form-control s_website_form_input" type="text" name="name" required="" placeholder="" id="oldv13bcqh0c" data-fill-with="name"/></div></div></div><div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required" data-type="char"><div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="ou7rqtw6var"><span class="s_website_form_label_content">Your Company</span><span class="s_website_form_mark"> *</span></label><div class="col-sm"><input class="form-control s_website_form_input" type="text" name="company" placeholder="" id="ou7rqtw6var" data-fill-with="commercial_company_name" required=""/></div></div></div><div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_model_required" data-type="email"><div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="oe673fckf9ba"><span class="s_website_form_label_content">Your Email</span><span class="s_website_form_mark"> *</span></label><div class="col-sm"><input class="form-control s_website_form_input" type="email" name="email_from" required="" placeholder="" id="oe673fckf9ba" data-fill-with="email"/></div></div></div>
+                    <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required" data-type="char"><div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="ovqwaylg4m7p"><span class="s_website_form_label_content">Country</span><span class="s_website_form_mark"> *</span></label><div class="col-sm"><input class="form-control s_website_form_input" type="text" name="Country" id="ovqwaylg4m7p" data-fill-with="undefined" required=""/></div></div></div><div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_model_required" data-type="char"><div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="oimrgpriix8g"><span class="s_website_form_label_content">Product Category</span><span class="s_website_form_mark"> *</span></label><div class="col-sm"><input class="form-control s_website_form_input" type="text" name="subject" required="" placeholder="Food &amp; Beverages, Handicrafts, Textiles &amp; Garments etc. " id="oimrgpriix8g" data-fill-with="undefined"/></div></div></div><div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required" data-type="text"><div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="o9pt54lj6kr"><span class="s_website_form_label_content">Detailed Product Description </span><span class="s_website_form_mark"> *</span></label><div class="col-sm"><textarea class="form-control s_website_form_input" name="Detailed Product Description " required="" placeholder="Be specific about products, specifications, quality requirements, certifications needed, etc." id="o9pt54lj6kr" rows="3"></textarea></div></div></div><div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_custom" data-type="binary"><div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-sm-auto s_website_form_label" style="width: 200px" for="owkcowtu43vr"><span class="s_website_form_label_content">Product Images</span></label><div class="col-sm"><input type="file" class="form-control s_website_form_input" name="Product Images" id="owkcowtu43vr" data-max-files-number="1" data-max-file-size="1" data-fill-with="undefined"/></div></div></div><div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required" data-type="char"><div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="oymscra5ub2p"><span class="s_website_form_label_content">Expected Quantity </span><span class="s_website_form_mark"> *</span></label><div class="col-sm"><input class="form-control s_website_form_input" type="text" name="Expected Quantity " id="oymscra5ub2p" required="" placeholder="Specify quantity with units (e.g., 1000 kg, 500 pieces, 50 tons)"/></div></div></div><div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required" data-type="many2one"><div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="o0nb6ijw1c59d"><span class="s_website_form_label_content">Budget Range (USD) </span><span class="s_website_form_mark"> *</span></label><div class="col-sm"><select class="form-select s_website_form_input" name="Budget Range (USD) " required="" id="o0nb6ijw1c59d"><option id="o0nb6ijw1c59d0" value="o0nb6ijw1c59d0" selected="selected">Under $1,000</option><option id="o0nb6ijw1c59d1" value="o0nb6ijw1c59d1">$1,000 - $5,000</option><option id="o0nb6ijw1c59d2" value="o0nb6ijw1c59d2">$5,000 - $10,000</option><option id="o0nb6ijw1c59d3" value="o0nb6ijw1c59d3">$10,000 - $25,000</option><option id="o0nb6ijw1c59d4" value="o0nb6ijw1c59d4">$25,000 - $50,000</option><option id="o0nb6ijw1c59d5" value="o0nb6ijw1c59d5">$50,000 - $100,000</option><option id="o0nb6ijw1c59d6" value="o0nb6ijw1c59d6">$100,000 - $500,000</option><option id="o0nb6ijw1c59d7" value="o0nb6ijw1c59d7">Above $500,000</option><option id="o0nb6ijw1c59d8" value="o0nb6ijw1c59d8">Prefer not to disclose</option></select></div></div></div><div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required" data-type="many2one"><div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="oc65ywzljku"><span class="s_website_form_label_content">Required Timeline </span><span class="s_website_form_mark"> *</span></label><div class="col-sm"><select class="form-select s_website_form_input" name="Required Timeline " required="" id="oc65ywzljku"><option id="oc65ywzljku0" value="oc65ywzljku0" selected="selected">ASAP (Within 2 weeks)</option><option id="oc65ywzljku1" value="oc65ywzljku1">Within 1 month</option><option id="oc65ywzljku2" value="oc65ywzljku2">Within 2-3 months</option><option id="oc65ywzljku3" value="oc65ywzljku3">Within 6 months</option><option id="oc65ywzljku4" value="oc65ywzljku4">Flexible timing</option></select></div></div></div>
+                    
+                    
+                    
+                    <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_custom" data-type="text"><div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="oznk4juuv84"><span class="s_website_form_label_content">Additional Requirements/Notes</span></label><div class="col-sm"><textarea class="form-control s_website_form_input" name="Additional Requirements/Notes" placeholder="" id="oznk4juuv84" rows="3"></textarea></div></div></div><div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_custom" data-type="tel"><div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="opd891hck0gp"><span class="s_website_form_label_content">Phone Number</span></label><div class="col-sm"><input class="form-control s_website_form_input" type="tel" name="phone" placeholder="" id="opd891hck0gp" data-fill-with="phone"/></div></div></div><div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_custom" data-type="char"><div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="o2dejf99cpsw"><span class="s_website_form_label_content">Website/Online Store URL</span></label><div class="col-sm"><input class="form-control s_website_form_input" type="text" name="Website/Online Store URL" id="o2dejf99cpsw" placeholder="Your business website, online catalog or social media page(Optional)"/></div></div></div><div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required" data-type="one2many"><div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-sm-auto s_website_form_label" style="width: 200px" for="osyoycfc7"><span class="s_website_form_label_content">Preferred Communication Method </span><span class="s_website_form_mark"> *</span></label><div class="col-sm"><div class="row s_col_no_resize s_col_no_bgcolor s_website_form_multiple" data-name="Preferred Communication Method " data-display="horizontal"><div class="checkbox col-12 col-lg-4 col-md-6"><div class="form-check"><input type="checkbox" class="s_website_form_input form-check-input" id="osyoycfc70" name="Preferred Communication Method " value="osyoycfc70" required="" data-fill-with="undefined"/><label class="form-check-label s_website_form_check_label" for="osyoycfc70">Email</label></div></div><div class="checkbox col-12 col-lg-4 col-md-6"><div class="form-check"><input type="checkbox" class="s_website_form_input form-check-input" id="osyoycfc71" name="Preferred Communication Method " value="osyoycfc71" required=""/><label class="form-check-label s_website_form_check_label" for="osyoycfc71">WhatsApp</label></div></div><div class="checkbox col-12 col-lg-4 col-md-6"><div class="form-check"><input type="checkbox" class="s_website_form_input form-check-input" id="osyoycfc72" name="Preferred Communication Method " value="osyoycfc72" required=""/><label class="form-check-label s_website_form_check_label" for="osyoycfc72">Phone Call</label></div></div><div class="checkbox col-12 col-lg-4 col-md-6"><div class="form-check"><input type="checkbox" class="s_website_form_input form-check-input" id="osyoycfc73" name="Preferred Communication Method " value="osyoycfc73" required=""/><label class="form-check-label s_website_form_check_label" for="osyoycfc73">Any method</label></div></div></div><div class="s_website_form_field_description small form-text text-muted"><p>How would you like us to contact you?</p></div></div></div></div>
+                    <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_dnone"><div class="row s_col_no_resize s_col_no_bgcolor"><label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px"><span class="s_website_form_label_content"></span></label><div class="col-sm"><input type="hidden" class="form-control s_website_form_input" name="email_to" value="Sanskritiglobalexports@gmail.com"/><input type="hidden" value="82065a8d3e6dedf5834aebd139a82df67cbb6ea3fa587ee29840b3f2959643cd" class="form-control s_website_form_input s_website_form_custom" name="website_form_signature"/></div></div></div><div class="mb-0 py-2 col-12 s_website_form_submit text-end s_website_form_no_submit_label" data-name="Submit Button">
+                        <div style="width: 200px;" class="s_website_form_label"></div>
+                        <span id="s_website_form_result"></span>
+                        ﻿<a href="#" role="button" class="btn btn-primary s_website_form_send">Submit</a>﻿
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+        </div>
+    </section>
+    <section class="s_carousel_intro_wrapper p-0" data-preview-interaction-enabled="true" data-snippet="s_carousel_intro" data-name="Carousel Intro">
+        <div class="s_carousel_intro s_carousel_default carousel slide carousel-dark o_colored_level" data-bs-ride="true" data-bs-interval="10000" id="myCarousel1762254266089">
+            
+            <div class="carousel-inner">
+                
+                <div class="s_carousel_intro_item carousel-item o_cc o_cc1 px-0 pt72 pb96 o_colored_level active" data-name="Slide">
+                    <div class="container">
+                        <div class="row o_grid_mode" data-row-count="9">
+                            <div class="o_grid_item g-col-lg-5 col-lg-5 o_colored_level g-height-9" style="z-index: 1; grid-area: 1 / 1 / 10 / 6;" data-name="Block">
+                                <h1 class="display-3-fs">Why Choose Verified Indian Suppliers?</h1><div class="s_social_media o_not_editable text-start" data-snippet="s_social_media" data-name="Social Media">
+        <h4 class="s_social_media_title d-none">Social Media</h4>
+<a href="/website/social/facebook" class="s_social_media_facebook" target="_blank" aria-label="Facebook">
+            <i class="fa fa-facebook rounded shadow-sm o_editable_media"></i>
+        </a>
+<a href="/website/social/linkedin" class="s_social_media_linkedin" target="_blank" aria-label="LinkedIn">
+            <i class="fa fa-linkedin rounded shadow-sm o_editable_media"></i>
+        </a>
+<a href="/website/social/instagram" class="s_social_media_instagram" target="_blank" aria-label="Instagram">
+            <i class="fa fa-instagram rounded shadow-sm o_editable_media"></i>
+        </a>
+</div>
+                            </div>
+                            <div class="o_grid_item g-col-lg-4 o_colored_level col-lg-4 g-height-7" style="z-index: 2; grid-area: 2 / 7 / 9 / 11; --grid-item-padding-y: 0px;" data-name="Block">
+                                <p class="lead">Avoid scams and ensure quality by sourcing from our vetted suppliers. We connect you directly to the best suppliers offering competitive pricing.</p>
+                            </div>
+                            
+                        <div class="o_grid_item o_grid_item_image g-height-4 g-col-lg-6 col-lg-6 o_colored_level" style="z-index: 3; grid-area: 5 / 7 / 9 / 13;" data-name="Block">
+                                <img src="/web/image/994-76a629e5/photo-1723853310542-a9d2d84f5fa2.webp" alt="" data-attachment-id="992" class="img img-fluid o_we_custom_image" data-format-mimetype="image/webp" data-original-id="992" data-original-src="/web/image/992-a019b7ed/photo-1723853310542-a9d2d84f5fa2.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="690" data-mimetype="image/webp" data-quality="100" loading="lazy"/>
+                            </div></div>
+                    </div>
+                </div>
+                
+                <div class="s_carousel_intro_item carousel-item o_cc o_cc1 px-0 pt72 pb96 o_colored_level" data-name="Slide">
+                    <div class="container">
+                        <div class="row o_grid_mode" data-row-count="8">
+                            <div class="o_grid_item g-height-5 g-col-lg-6 col-lg-6 o_colored_level" style="z-index: 1; grid-area: 1 / 7 / 6 / 13;" data-name="Block">
+                                <p><span class="h1-fs">700+&nbsp;</span></p><p><span class="h4-fs">Verified Indian suppliers listed</span></p>
+                            </div>
+                            <div class="o_grid_item o_grid_item_image g-height-7 g-col-lg-5 col-lg-5 o_colored_level" style="z-index: 3; grid-area: 2 / 1 / 9 / 6;" data-name="Block">
+                                <img src="/web/image/website.s_carousel_intro_default_image_2" alt="" class="img img-fluid" data-mimetype="image/jpeg" loading="lazy"/>
+                            </div>
+                        <div class="o_grid_item g-height-2 g-col-lg-4 col-lg-4 o_colored_level" style="z-index: 2; --grid-item-padding-y: 20px; grid-area: 5 / 7 / 7 / 11;" data-name="Block">We carefully vet all suppliers to ensure quality and trustworthiness.</div></div>
+                    </div>
+                </div>
+                
+                <div class="s_carousel_intro_item carousel-item o_cc o_cc1 px-0 pt72 pb96 o_colored_level" data-name="Slide">
+                    <div class="container">
+                        <div class="row o_grid_mode" data-row-count="8">
+                            <div class="o_grid_item g-height-8 g-col-lg-5 col-lg-5 o_colored_level" style="z-index: 1; grid-area: 1 / 1 / 9 / 6;" data-name="Box">
+                                <h2 class="display-3-fs">100%No upfront charges or hidden fees</h2>
+                            </div>
+                            <div class="o_grid_item g-height-4 g-col-lg-4 col-lg-4 o_colored_level" style="z-index: 2; grid-area: 5 / 9 / 9 / 13;" data-name="Box">
+                                <p class="lead">Simply list your product and we connect you to the right suppliers and&nbsp;Get competitive prices with transparent sourcing from India.</p>
+                            </div>
+                            <div class="o_grid_item o_grid_item_image g-height-8 g-col-lg-3 col-lg-3 o_colored_level" style="z-index: 3; grid-area: 1 / 6 / 9 / 9;" data-name="Box">
+                                <img src="/web/image/995-693f3ef5/photo-1579621970795-87facc2f976d.webp" alt="" data-attachment-id="993" class="img img-fluid o_we_custom_image" data-format-mimetype="image/webp" data-original-id="993" data-original-src="/web/image/993-1954e720/photo-1579621970795-87facc2f976d.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="690" data-mimetype="image/webp" data-quality="100" data-aspect-ratio="0/0" data-width="1920" data-height="1280" data-scale-x="-1" data-scale-y="1" loading="lazy"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="o_horizontal_controllers container position-absolute start-50 bottom-0 translate-middle-x w-100 mb-md-4 o_not_editable">
+                <div class="o_horizontal_controllers_row row gap-3 gap-lg-5 justify-content-between flex-nowrap flex-row-reverse mx-0">
+                    
+                    <div class="o_arrows_wrapper gap-2 w-auto p-0 o_colored_level">
+                        <button class="carousel-control-prev o_not_editable" aria-label="Previous" title="Previous" data-bs-target="#myCarousel1762254266089" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next o_not_editable" aria-label="Next" title="Next" data-bs-target="#myCarousel1762254266089" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    
+                    <div class="s_carousel_indicators_numbers carousel-indicators align-items-center flex-shrink-1 w-auto o_colored_level">
+                        <button type="button" class="active" aria-label="Carousel indicator" data-bs-target="#myCarousel1762254266089" data-bs-slide-to="0" aria-current="true"></button>
+                        <button type="button" aria-label="Carousel indicator" data-bs-target="#myCarousel1762254266089" data-bs-slide-to="1"></button>
+                        <button type="button" aria-label="Carousel indicator" data-bs-target="#myCarousel1762254266089" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</div>
+    
+        <div id="o_shared_blocks" class="oe_unremovable"></div>
+                </main>
+                <footer id="bottom" data-anchor="true" data-name="Footer" class="o_footer o_colored_level o_cc ">
+                    <div id="footer" class="oe_structure oe_structure_solo">
+            <section class="s_text_block pt32 pb16" data-snippet="s_text_block" data-name="Text">
+                <div class="container">
+                    <div class="row o_grid_mode">
+                        <div class="col-lg-3 pt16 pb16 o_grid_item g-col-lg-3 o_colored_level g-height-2" style="z-index: 1; grid-area: 1 / 1 / 3 / 4; --grid-item-padding-y: 0px; --grid-item-padding-x: 10px;">
+                            <p class="mb-2">How can we help?</p>
+                            <h4>Contact us anytime</h4>
+                        </div>
+                        <div class="col-lg-3 pt16 pb16 o_grid_item g-col-lg-3 o_colored_level g-height-2" style="z-index: 2; grid-area: 1 / 4 / 3 / 7; --grid-item-padding-y: 0px; --grid-item-padding-x: 10px;">
+                            <p class="mb-2">Call us</p>
+                            <h5>
+                                <span class="o_force_ltr">
+                                    <a href="tel:+1%20555-555-5556">+91 62843-27345</a>
+                                </span>
+                            </h5>
+                        </div>
+                        <div class="pt16 pb16 o_grid_item g-col-lg-3 o_colored_level g-height-2 col-lg-3" style="z-index: 3; grid-area: 1 / 7 / 3 / 10; --grid-item-padding-x: 0px; --grid-item-padding-y: 10px;">
+                            <p class="mb-2">Send us a message</p>
+                            <h5>
+                                <a href="mailto:hello@mycompany.com">Sanskritiglobalexports@gmail.com</a>
+                            <br/></h5>
+                        </div>
+                        <div class="col-lg-3 pt16 pb16 o_grid_item g-col-lg-3 o_colored_level g-height-2" style="z-index: 4; grid-area: 1 / 10 / 3 / 13; --grid-item-padding-y: 0px; --grid-item-padding-x: 10px;">
+                            <div class="s_social_media no_icon_color o_not_editable text-end" data-snippet="s_social_media" data-name="Social Media">
+                                <p class="s_social_media_title mb-2 d-block">Follow us</p>
+<a href="/website/social/instagram" class="s_social_media_instagram" target="_blank">
+                                    <i class="fa fa-instagram m-1 o_editable_media"></i>
+                                </a>
+<a href="/website/social/linkedin" class="s_social_media_linkedin" target="_blank">
+                                    <i class="fa fa-linkedin m-1 o_editable_media"></i>
+                                </a>
+<a href="/website/social/facebook" class="s_social_media_facebook" target="_blank" aria-label="Facebook">
+                                    <i class="fa m-1 o_editable_media fa-facebook"></i>
+                                </a>
+</div>
+                        </div>
+                        <div class="col-lg-12 pt16 pb16 o_grid_item g-col-lg-12 o_colored_level g-height-1" style="z-index: 5; grid-area: 3 / 1 / 4 / 13; --grid-item-padding-y: 0px; --grid-item-padding-x: 10px;">
+                            <div class="s_hr pt16 pb16">
+                                <hr class="w-100 mx-auto" style="border-color: var(--600);"/>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 o_grid_item g-col-lg-2 o_grid_item_image o_colored_level g-height-1 o_grid_item_image_contain" style="z-index: 6; grid-area: 4 / 1 / 5 / 3; --grid-item-padding-y: 0px; --grid-item-padding-x: 10px;">
+                            <a href="/" class="o_footer_logo logo">
+                                <img src="/web/image/478-32aef791/ChatGPT%20Image%20Jul%2023%2C%202025%2C%2004_24_20%20PM.webp" alt="Sanskriti Global Exports official company logo." data-attachment-id="456" class="img-fluid img o_we_custom_image" data-format-mimetype="image/webp" data-original-id="456" data-original-src="/web/image/456-b3329215/ChatGPT%20Image%20Jul%2023%2C%202025%2C%2004_24_20%20PM.png" data-mimetype-before-conversion="image/png" data-resize-width="690" data-mimetype="image/webp" loading="lazy" data-quality="100"/>
+                            </a>
+                        </div>
+                        <div class="pt16 text-end o_colored_level o_grid_item g-col-lg-8 g-height-1 col-lg-8" style="z-index: 7; grid-area: 4 / 5 / 5 / 13; --grid-item-padding-y: 0px; --grid-item-padding-x: 10px;">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <a href="/">Home</a>
+                                </li>
+                                <li class="list-inline-item">•</li>
+                                <li class="list-inline-item">
+                                    <a href="#">About us</a></li><li class="list-inline-item">
+                                </li><li class="list-inline-item">•</li>
+                                <li class="list-inline-item">
+                                    <a href="https://sgexports.odoo.com/terms-of-service">Terms of Services</a>
+                                </li>
+                                    <li class="list-inline-item">•</li>
+                                    <li class="list-inline-item">
+                                        <a href="/privacy">Privacy Policy</a>
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="o_footer_scrolltop_wrapper" class="container h-0 d-flex align-items-center justify-content-center">
+            <a id="o_footer_scrolltop" role="button" href="#top" title="Scroll To Top" class="btn btn-primary rounded-circle d-flex align-items-center justify-content-center">
+                <span class="oi fa-1x oi-chevron-up"></span>
+            </a>
+        </div>
+    <div class="o_footer_copyright o_colored_level o_cc" data-name="Copyright">
+                        <div class="container py-3">
+                            <div class="row">
+                                <div class="col-sm text-center text-sm-start text-muted">
+                                    <span class="o_footer_copyright_name me-2">Copyright © Sanskriti Global Exports</span>
+        
+        
+    </div>
+                                <div class="col-sm text-center text-sm-end o_not_editable">
+        <div class="o_brand_promotion">
+        Powered by 
+            <a target="_blank" class="badge text-bg-light" href="http://www.odoo.com?utm_source=db&amp;utm_medium=website">
+                <img alt="Odoo" src="/web/static/img/odoo_logo_tiny.png" width="62" height="20" style="width: auto; height: 1em; vertical-align: baseline;" loading="lazy"/>
+            </a>
+        - 
+                Create a <a target="_blank" href="http://www.odoo.com/app/website?utm_source=db&amp;utm_medium=website">free website</a>
+            
+    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <script id="plausible_script" name="plausible" defer="defer" data-domain="sgexports.odoo.com" src="https://download.odoo.com/js/plausi_saas.js"></script>
+        
+        </body>
+</html>
