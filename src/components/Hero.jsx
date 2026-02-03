@@ -35,17 +35,9 @@ const Hero = () => {
                             href="#products"
                             whileHover={{ scale: 1.02 }}
                             whileTap={{ scale: 0.98 }}
-                            className="btn-primary flex-1 md:flex-none px-6 py-4 rounded-full font-bold text-base md:text-lg flex justify-center items-center gap-2 shadow-lg shadow-brand-cyan/20 whitespace-nowrap"
+                            className="btn-primary px-8 py-4 rounded-full font-bold text-base md:text-lg flex justify-center items-center gap-2 shadow-lg shadow-brand-cyan/20 whitespace-nowrap"
                         >
-                            Explore <span className="hidden sm:inline">Products</span> <ArrowRight size={20} />
-                        </motion.a>
-                        <motion.a
-                            href="#contact"
-                            whileHover={{ scale: 1.02 }}
-                            whileTap={{ scale: 0.98 }}
-                            className="flex-1 md:flex-none px-6 py-4 rounded-full font-bold text-lg text-white border border-white/30 hover:bg-white/10 transition-colors flex justify-center items-center gap-2 backdrop-blur-sm whitespace-nowrap"
-                        >
-                            Contact <span className="hidden sm:inline">Us</span> <ChevronRight size={20} />
+                            Explore Products <ArrowRight size={20} />
                         </motion.a>
                     </div>
                 </div>
