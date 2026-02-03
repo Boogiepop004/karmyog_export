@@ -83,34 +83,7 @@ const Fruits = () => {
                     </div>
                 </div>
 
-                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 md:p-8 mb-16">
-                    <form onSubmit={handleSubmit} className="grid md:grid-cols-2 gap-5">
-                        {/* Form Content omitted for brevity in search replacement, but effectively I am just removing the animation wrapper around this block if it existed.
-                           Wait, the Header block above has motion.div?
-                           Let's check the target content more carefully.
-                           Ah, I see I am replacing the Header block.
-                           Let's replace the Header block first.
-                       */}
-                        {/* Actually, looking at the previous file content for Fruits.jsx in Step 1225.
-                           Line 36-57 is Header.
-                           Line 60-86 is Grid.
-                           Wait, `Fruits.jsx` in Step 1225 uses `div` for Header (Line 36), it does NOT use motion.div for header.
-                           It DOES use `motion.div` for the Grid Items (Line 62).
-                           "key={fruit.id} ... motion.div ... initial={{ opacity: 0 ... }}"
-                           So I only need to target the Grid Items.
-                           Wait, I also see `motion.div` in `Enquiry` form? No, `Fruits.jsx` has `form` inside?
-                           Step 1225 shows `Fruits.jsx` has a search bar but NO form visible in the lines 1-100 except the header and grid.
-                           Ah, I see `handleSubmit` and `formData` in `Step 1125` edit summary, but in `Step 1225` file view:
-                           Lines 36-57: Header
-                           Lines 60-86: Grid
-                           There is NO form in lines 1-100.
-                           Wait, looking at Step 1125 "Refactored Enquiry form...". That was `Enquiry.jsx`.
-                           But `Fruits.jsx` in Step 1225 lines 1-100 shows `Fruits` component logic.
-                           It has `motion.div` at line 62.
-                           It does NOT have `motion.div` at line 36 (Header).
-                           So I only need to fix the Grid.
-                       */}
-                </div>
+
 
                 {/* Grid - Uniform Sizing */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-12">
