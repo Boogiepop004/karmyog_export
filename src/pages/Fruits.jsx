@@ -32,29 +32,7 @@ const Fruits = () => {
         <div className="pt-24 pb-16 min-h-screen">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                {/* Header - Simple & Clean */}
-                <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-16">
-                    <div>
-                        <Link to="/" className="inline-flex items-center text-gray-500 hover:text-brand-black mb-4 transition-colors">
-                            <ArrowLeft size={20} className="mr-2" /> Back to Home
-                        </Link>
-                        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
-                            Fruits
-                        </h1>
-                    </div>
 
-                    {/* Search - Minimal */}
-                    <div className="relative">
-                        <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
-                        <input
-                            type="text"
-                            placeholder="Search..."
-                            value={searchTerm}
-                            onChange={(e) => setSearchTerm(e.target.value)}
-                            className="pl-12 pr-4 py-3 bg-white border-b-2 border-gray-100 hover:border-gray-300 focus:border-brand-black w-full md:w-64 focus:outline-none transition-colors"
-                        />
-                    </div>
-                </div>
 
                 {/* Header - Simple & Clean */}
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-16">
