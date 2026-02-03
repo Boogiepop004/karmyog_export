@@ -19,38 +19,24 @@ const ProductGrid = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        className="max-w-2xl"
-                    >
+                    <div className="max-w-2xl">
                         <h4 className="text-brand-cyan font-bold tracking-wide uppercase text-sm mb-2">What We Do</h4>
                         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
                             Exporting Excellence <br /> Across Borders
                         </h2>
-                    </motion.div>
+                    </div>
 
-                    <motion.div
-                        initial={{ opacity: 0, x: 20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        className="self-end md:self-auto"
-                    >
+                    <div className="self-end md:self-auto">
                         <button className="text-gray-900 font-bold border-b-2 border-brand-cyan pb-1 hover:text-brand-cyan transition-colors flex items-center gap-2">
                             View All Products <ArrowUpRight size={18} />
                         </button>
-                    </motion.div>
+                    </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {products.map((product, index) => (
-                        <motion.div
+                        <div
                             key={product.id}
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: index * 0.1 }}
                             onClick={() => product.link && navigate(product.link)}
                             className={`rounded-[2rem] hover:shadow-soft transition-all duration-300 group relative overflow-hidden ${product.link ? 'cursor-pointer' : ''} ${product.image ? 'aspect-[4/3] md:aspect-auto' : 'bg-white p-8 border border-transparent hover:border-brand-cyan/20'}`}
                         >
@@ -89,7 +75,7 @@ const ProductGrid = () => {
 
                             {/* Decorative gradient blob */}
                             <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-gradient-to-br from-brand-cyan/10 to-brand-teal/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500"></div>
-                        </motion.div>
+                        </div>
                     ))}
                 </div>
             </div>

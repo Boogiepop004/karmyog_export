@@ -56,14 +56,67 @@ const Fruits = () => {
                     </div>
                 </div>
 
+                {/* Header - Simple & Clean */}
+                <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-16">
+                    <div>
+                        <Link to="/" className="inline-flex items-center text-gray-500 hover:text-brand-black mb-4 transition-colors">
+                            <ArrowLeft size={20} className="mr-2" /> Back to Home
+                        </Link>
+                        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
+                            Fruits
+                        </h1>
+                        <h2 className="text-2xl font-bold text-brand-cyan">
+                            Let's Connect
+                        </h2>
+                    </div>
+
+                    {/* Search - Minimal */}
+                    <div className="relative">
+                        <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
+                        <input
+                            type="text"
+                            placeholder="Search..."
+                            value={searchTerm}
+                            onChange={(e) => setSearchTerm(e.target.value)}
+                            className="pl-12 pr-4 py-3 bg-white border-b-2 border-gray-100 hover:border-gray-300 focus:border-brand-black w-full md:w-64 focus:outline-none transition-colors"
+                        />
+                    </div>
+                </div>
+
+                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 md:p-8 mb-16">
+                    <form onSubmit={handleSubmit} className="grid md:grid-cols-2 gap-5">
+                        {/* Form Content omitted for brevity in search replacement, but effectively I am just removing the animation wrapper around this block if it existed.
+                           Wait, the Header block above has motion.div?
+                           Let's check the target content more carefully.
+                           Ah, I see I am replacing the Header block.
+                           Let's replace the Header block first.
+                       */}
+                        {/* Actually, looking at the previous file content for Fruits.jsx in Step 1225.
+                           Line 36-57 is Header.
+                           Line 60-86 is Grid.
+                           Wait, `Fruits.jsx` in Step 1225 uses `div` for Header (Line 36), it does NOT use motion.div for header.
+                           It DOES use `motion.div` for the Grid Items (Line 62).
+                           "key={fruit.id} ... motion.div ... initial={{ opacity: 0 ... }}"
+                           So I only need to target the Grid Items.
+                           Wait, I also see `motion.div` in `Enquiry` form? No, `Fruits.jsx` has `form` inside?
+                           Step 1225 shows `Fruits.jsx` has a search bar but NO form visible in the lines 1-100 except the header and grid.
+                           Ah, I see `handleSubmit` and `formData` in `Step 1125` edit summary, but in `Step 1225` file view:
+                           Lines 36-57: Header
+                           Lines 60-86: Grid
+                           There is NO form in lines 1-100.
+                           Wait, looking at Step 1125 "Refactored Enquiry form...". That was `Enquiry.jsx`.
+                           But `Fruits.jsx` in Step 1225 lines 1-100 shows `Fruits` component logic.
+                           It has `motion.div` at line 62.
+                           It does NOT have `motion.div` at line 36 (Header).
+                           So I only need to fix the Grid.
+                       */}
+                </div>
+
                 {/* Grid - Uniform Sizing */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-12">
                     {filteredFruits.map((fruit, index) => (
-                        <motion.div
+                        <div
                             key={fruit.id}
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ delay: index * 0.05, duration: 0.4 }}
                             className="group cursor-default"
                         >
                             {/* Image Container - OBJECT COVER for alignment */}
@@ -81,7 +134,7 @@ const Fruits = () => {
                                     {fruit.name}
                                 </h3>
                             </div>
-                        </motion.div>
+                        </div>
                     ))}
                 </div>
 

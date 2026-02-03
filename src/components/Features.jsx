@@ -19,11 +19,7 @@ const Features = () => {
 
                 {/* Why Choose Us */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24">
-                    <motion.div
-                        initial={{ opacity: 0, x: -50 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                    >
+                    <div>
                         <div className="inline-block px-3 py-1 rounded-full bg-brand-cyan/10 text-brand-cyan font-bold tracking-wide uppercase text-xs mb-4">
                             About Us
                         </div>
@@ -35,14 +31,9 @@ const Features = () => {
                             We are a Surat-based merchant exporter dedicated to sourcing the best of India. From fresh agricultural produce to quality textiles, we focus on straightforward, reliable trade. We work directly with producers to ensure quality and handle the logistics so you don't have to.
                         </p>
 
-                    </motion.div>
+                    </div>
 
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        className="grid grid-cols-2 gap-4"
-                    >
+                    <div className="grid grid-cols-2 gap-4">
                         <div className="bg-white p-6 rounded-[2rem] border border-gray-100 shadow-xl shadow-gray-200/50 hover:border-brand-cyan/30 transition-colors group">
                             <div className="w-12 h-12 rounded-xl bg-orange-50 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                                 <ShieldCheck className="text-orange-500 w-6 h-6" />
@@ -71,7 +62,7 @@ const Features = () => {
                             <h4 className="text-gray-900 font-bold text-lg mb-2">24/7 Support</h4>
                             <p className="text-gray-500 text-sm leading-relaxed">Always available to track and assist.</p>
                         </div>
-                    </motion.div>
+                    </div>
                 </div>
 
                 {/* Stats */}

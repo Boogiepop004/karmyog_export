@@ -17,12 +17,7 @@ const Hero = () => {
             </div>
 
             <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <motion.div
-                    initial={{ opacity: 0, x: -50 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.8 }}
-                    className="max-w-3xl text-left"
-                >
+                <div className="max-w-3xl text-left">
 
 
                     <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
@@ -40,7 +35,7 @@ const Hero = () => {
                             href="#products"
                             whileHover={{ scale: 1.02 }}
                             whileTap={{ scale: 0.98 }}
-                            className="btn-primary px-8 py-4 rounded-full font-bold text-lg flex items-center gap-2 shadow-lg shadow-brand-cyan/20"
+                            className="btn-primary px-8 py-4 rounded-full font-bold text-lg flex items-center gap-2 shadow-lg shadow-brand-cyan/20 cursor-pointer"
                         >
                             Explore Products <ArrowRight size={20} />
                         </motion.a>
@@ -48,12 +43,12 @@ const Hero = () => {
                             href="#contact"
                             whileHover={{ scale: 1.02 }}
                             whileTap={{ scale: 0.98 }}
-                            className="px-8 py-4 rounded-full font-bold text-lg text-white border border-white/30 hover:bg-white/10 transition-colors flex items-center gap-2"
+                            className="px-8 py-4 rounded-full font-bold text-lg text-white border border-white/30 hover:bg-white/10 transition-colors flex items-center gap-2 cursor-pointer"
                         >
                             Contact Us <ChevronRight size={20} />
                         </motion.a>
                     </div>
-                </motion.div>
+                </div>
             </div>
 
 
