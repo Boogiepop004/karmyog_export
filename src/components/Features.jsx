@@ -63,17 +63,17 @@ const Features = () => {
                             <p className="text-gray-500 text-sm leading-relaxed">Always available to track and assist.</p>
                         </div>
                     </div>
-                </div>
 
-                {/* Stats */}
-                <div className="border-t border-gray-100 pt-16">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center feature-stats">
-                        {achievements.map((item, index) => (
-                            <div key={index} className="p-4">
-                                <div className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">{item.number}</div>
-                                <div className="text-gray-500 uppercase tracking-wider text-xs font-semibold">{item.label}</div>
-                            </div>
-                        ))}
+                    {/* Stats */}
+                    <div className="border-t border-gray-100 pt-16">
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center feature-stats">
+                            {achievements.map((item, index) => (
+                                <div key={index} className="p-4">
+                                    <div className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">{item.number}</div>
+                                    <div className="text-gray-500 uppercase tracking-wider text-xs font-semibold">{item.label}</div>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>

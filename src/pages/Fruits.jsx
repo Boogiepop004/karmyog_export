@@ -32,8 +32,6 @@ const Fruits = () => {
         <div className="pt-24 pb-16 min-h-screen">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-
-
                 {/* Header - Simple & Clean */}
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-16">
                     <div>
@@ -43,9 +41,6 @@ const Fruits = () => {
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
                             Fruits
                         </h1>
-                        <h2 className="text-2xl font-bold text-brand-cyan">
-                            Let's Connect
-                        </h2>
                     </div>
 
                     {/* Search - Minimal */}
@@ -60,8 +55,6 @@ const Fruits = () => {
                         />
                     </div>
                 </div>
-
-
 
                 {/* Grid - Uniform Sizing */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-12">

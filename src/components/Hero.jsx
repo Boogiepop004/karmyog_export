@@ -35,7 +35,7 @@ const Hero = () => {
                             href="#products"
                             whileHover={{ scale: 1.02 }}
                             whileTap={{ scale: 0.98 }}
-                            className="btn-primary px-8 py-4 rounded-full font-bold text-lg flex items-center gap-2 shadow-lg shadow-brand-cyan/20 cursor-pointer"
+                            className="btn-primary px-8 py-4 rounded-full font-bold text-lg flex items-center gap-2 shadow-lg shadow-brand-cyan/20"
                         >
                             Explore Products <ArrowRight size={20} />
                         </motion.a>
@@ -43,7 +43,7 @@ const Hero = () => {
                             href="#contact"
                             whileHover={{ scale: 1.02 }}
                             whileTap={{ scale: 0.98 }}
-                            className="px-8 py-4 rounded-full font-bold text-lg text-white border border-white/30 hover:bg-white/10 transition-colors flex items-center gap-2 cursor-pointer"
+                            className="px-8 py-4 rounded-full font-bold text-lg text-white border border-white/30 hover:bg-white/10 transition-colors flex items-center gap-2"
                         >
                             Contact Us <ChevronRight size={20} />
                         </motion.a>

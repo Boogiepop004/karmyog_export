@@ -48,11 +48,8 @@ const Textile = () => {
                 {/* Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-12">
                     {filteredProducts.map((product, index) => (
-                        <motion.div
+                        <div
                             key={product.id}
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ delay: index * 0.05, duration: 0.4 }}
                             className="group cursor-default"
                         >
                             {/* Image Container */}
@@ -70,7 +67,7 @@ const Textile = () => {
                                     {product.name}
                                 </h3>
                             </div>
-                        </motion.div>
+                        </div>
                     ))}
                 </div>
 

@@ -54,11 +54,8 @@ const Spices = () => {
                 {/* Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-12">
                     {filteredSpices.map((spice, index) => (
-                        <motion.div
+                        <div
                             key={spice.id}
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ delay: index * 0.05, duration: 0.4 }}
                             className="group cursor-default"
                         >
                             {/* Image Container - Consistent Sizing */}
@@ -76,7 +73,7 @@ const Spices = () => {
                                     {spice.name}
                                 </h3>
                             </div>
-                        </motion.div>
+                        </div>
                     ))}
                 </div>
 
