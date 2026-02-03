@@ -17,7 +17,7 @@ const Hero = () => {
             </div>
 
             <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 mt-10 md:mt-0">
-                <div className="max-w-3xl text-left">
+                <div className="max-w-3xl text-left mx-0">
 
 
                     <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight drop-shadow-lg">
@@ -30,7 +30,7 @@ const Hero = () => {
                         Premium quality spices, textiles, and agricultural products delivered with reliability and speed across the globe.
                     </p>
 
-                    <div className="flex flex-row gap-4 items-center w-full">
+                    <div className="flex flex-row justify-start gap-4 items-center w-full">
                         <motion.a
                             href="#products"
                             whileHover={{ scale: 1.02 }}

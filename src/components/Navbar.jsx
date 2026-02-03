@@ -74,7 +74,7 @@ const Navbar = () => {
                                         </div>
                                     </div>
                                 ) : (
-                                    <Link to="/" className={`font-main font-bold text-lg md:text-2xl tracking-tighter transition-colors duration-200 ${scrolled || isOpen ? 'text-gray-900' : 'text-white'}`}>
+                                    <Link to="/" className={`font-main font-bold text-xl md:text-2xl tracking-tighter transition-colors duration-200 ${scrolled || isOpen ? 'text-gray-900' : 'text-white'}`}>
                                         MONTARA EXIM
                                     </Link>
                                 )}
