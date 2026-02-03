@@ -113,18 +113,16 @@ const Navbar = () => {
                 </div>
             </nav>
 
-            {/* Mobile Menu Dropdown */}
+            {/* Mobile Menu Dropdown - Now compact and positioned below navbar */}
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
-                    <motion.div
-                        initial={{ opacity: 0, y: '-100%' }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: '-100%' }}
-                        transition={{ duration: 0.3, ease: 'easeInOut' }}
-                        className="fixed top-0 left-0 right-0 z-40 bg-white pt-24 pb-8 px-6 md:hidden shadow-xl rounded-b-[2rem] overflow-hidden"
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: 'auto' }}
+                        exit={{ opacity: 0, height: 0 }}
+                        className="fixed top-[72px] left-0 right-0 z-40 bg-white shadow-xl border-t border-gray-100 overflow-hidden md:hidden"
                     >
-                        <div className="flex flex-col space-y-4">
+                        <div className="flex flex-col p-6 space-y-4">
                             {navLinks.map((link) => {
                                 const isHashInHome = link.href.includes('#') && isHomePage;
                                 const props = isHashInHome
@@ -147,7 +145,7 @@ const Navbar = () => {
                                 <Link
                                     to="/enquiry"
                                     onClick={() => setIsOpen(false)}
-                                    className="bg-brand-black text-white inline-flex justify-center items-center px-6 py-3 rounded-full text-base font-bold mt-2 w-full"
+                                    className="bg-brand-black text-white inline-flex justify-center items-center px-6 py-3 rounded-lg text-base font-bold w-full"
                                 >
                                     Get In Touch
                                 </Link>
