@@ -26,11 +26,7 @@ const ProductGrid = () => {
                         </h2>
                     </div>
 
-                    <div className="self-start md:self-auto">
-                        <button className="text-gray-900 font-bold border-b-2 border-brand-cyan pb-1 hover:text-brand-cyan transition-colors flex items-center gap-2">
-                            View All Products <ArrowUpRight size={18} />
-                        </button>
-                    </div>
+
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
