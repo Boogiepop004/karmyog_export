@@ -75,7 +75,7 @@ const Navbar = () => {
                                     </div>
                                 ) : (
                                     <Link to="/" className={`font-main font-bold text-2xl tracking-tighter transition-colors duration-200 ${scrolled || isOpen ? 'text-gray-900' : 'text-white'}`}>
-                                        KARMYOG
+                                        MONTARA EXIM
                                     </Link>
                                 )}
                             </div>
