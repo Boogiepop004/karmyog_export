@@ -10,6 +10,7 @@ import Fruits from './pages/Fruits';
 import Spices from './pages/Spices';
 import Vegetables from './pages/Vegetables';
 import Textile from './pages/Textile';
+import Rice from './pages/Rice';
 
 import ScrollToTop from './components/ScrollToTop';
 
@@ -33,6 +34,7 @@ function App() {
                     <Route path="/products/vegetables" element={<Vegetables />} />
                     <Route path="/products/spices" element={<Spices />} />
                     <Route path="/products/textile" element={<Textile />} />
+                    <Route path="/products/rice" element={<Rice />} />
                 </Routes>
             </main>
             <Footer />

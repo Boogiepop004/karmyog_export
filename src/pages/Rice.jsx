@@ -3,18 +3,16 @@ import { motion } from 'framer-motion';
 import { ArrowLeft, Search } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const textileProducts = [
-    { id: 1, name: 'Raw Cotton Bales', image: '/images/textile/product_cotton_bales.png' },
-    { id: 2, name: 'Cotton Waste', image: '/images/textile/product_cotton_waste.png' },
-    { id: 3, name: 'Grey Fabric', image: '/images/textile/product_grey_fabric.png' },
-    { id: 4, name: 'Cotton Linters', image: '/images/textile/product_cotton_linters.png' },
-    { id: 5, name: 'Yarn', image: '/images/product-yarn.png' },
+const riceProducts = [
+    { id: 1, name: '1121 Basmati Rice', image: '/images/product-basmati-1121.jpg' },
+    { id: 2, name: 'IR-64 Rice', image: '/images/product-ir64-rice.png' },
+    { id: 3, name: '1509 Basmati Rice', image: '/images/product-basmati-1509.jpg' },
 ];
 
-const Textile = () => {
+const Rice = () => {
     const [searchTerm, setSearchTerm] = useState('');
 
-    const filteredProducts = textileProducts.filter(product =>
+    const filteredProducts = riceProducts.filter(product =>
         product.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
@@ -25,8 +23,11 @@ const Textile = () => {
                 {/* Header */}
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8">
                     <div>
+                        <Link to="/#products" className="inline-flex items-center text-gray-500 hover:text-brand-cyan mb-4 transition-colors">
+                            <ArrowLeft size={20} className="mr-2" /> Back to Products
+                        </Link>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
-                            Textile
+                            Basmati & Non-Basmati Rice
                         </h1>
                     </div>
 
@@ -35,7 +36,7 @@ const Textile = () => {
                         <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
                         <input
                             type="text"
-                            placeholder="Search textile..."
+                            placeholder="Search rice..."
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
                             className="pl-12 pr-4 py-3 bg-white border-b-2 border-gray-100 hover:border-gray-300 focus:border-brand-black w-full md:w-64 focus:outline-none transition-colors"
@@ -80,4 +81,4 @@ const Textile = () => {
     );
 };
 
-export default Textile;
+export default Rice;
