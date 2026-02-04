@@ -85,6 +85,57 @@ const Fruits = () => {
                     </div>
                 )}
 
+                {/* Additional Info Section */}
+                <div className="mt-20 border-t border-gray-100 pt-16">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
+                        {/* Packaging Options */}
+                        <div className="bg-gray-50/50 p-8 rounded-3xl border border-gray-100">
+                            <h3 className="text-2xl font-bold text-gray-900 mb-8">Packaging Options</h3>
+                            <ul className="space-y-4">
+                                {[
+                                    'Corrugated boxes (3kg, 5kg, 10kg)',
+                                    'Wooden crates for bulk',
+                                    'Modified atmosphere packaging',
+                                    'Retail-ready punnets',
+                                    'Custom branding available'
+                                ].map((item, i) => (
+                                    <li key={i} className="flex items-start">
+                                        <span className="text-brand-gold mr-3 mt-1">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 6L9 17L4 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
+                                        </span>
+                                        <span className="text-gray-600 font-medium">{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        {/* Quality Standards */}
+                        <div className="bg-gray-50/50 p-8 rounded-3xl border border-gray-100">
+                            <h3 className="text-2xl font-bold text-gray-900 mb-8">Quality Standards</h3>
+                            <ul className="space-y-4">
+                                {[
+                                    'GLOBAL GAP certified farms',
+                                    'Pesticide residue testing',
+                                    'Size grading and sorting',
+                                    'Pre-cooling facilities',
+                                    'Phytosanitary certification'
+                                ].map((item, i) => (
+                                    <li key={i} className="flex items-start">
+                                        <span className="text-brand-gold mr-3 mt-1">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 6L9 17L4 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
+                                        </span>
+                                        <span className="text-gray-600 font-medium">{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     );

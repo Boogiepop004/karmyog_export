@@ -7,6 +7,11 @@ const riceProducts = [
     { id: 1, name: '1121 Basmati Rice', image: '/images/product-basmati-1121.jpg' },
     { id: 2, name: 'IR-64 Rice', image: '/images/product-ir64-rice.png' },
     { id: 3, name: '1509 Basmati Rice', image: '/images/product-basmati-1509.jpg' },
+    { id: 4, name: 'Sona Masoori Rice', image: '/images/product-sona-masoori.jpg' },
+    { id: 5, name: 'Pusa Basmati Rice', image: '/images/product-pusa-basmati.png' },
+    { id: 6, name: 'Ponni Rice', image: '/images/product-ponni-rice.jpg' },
+    { id: 7, name: 'Traditional Basmati Rice', image: '/images/product-traditional-basmati.png' },
+    { id: 8, name: 'Broken Rice', image: '/images/product-broken-rice.jpg' },
 ];
 
 const Rice = () => {
@@ -23,9 +28,6 @@ const Rice = () => {
                 {/* Header */}
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8">
                     <div>
-                        <Link to="/#products" className="inline-flex items-center text-gray-500 hover:text-brand-cyan mb-4 transition-colors">
-                            <ArrowLeft size={20} className="mr-2" /> Back to Products
-                        </Link>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
                             Basmati & Non-Basmati Rice
                         </h1>
@@ -75,6 +77,57 @@ const Rice = () => {
                         <p className="text-gray-400">No products found</p>
                     </div>
                 )}
+
+                {/* Additional Info Section */}
+                <div className="mt-20 border-t border-gray-100 pt-16">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
+                        {/* Packaging Options */}
+                        <div className="bg-gray-50/50 p-8 rounded-3xl border border-gray-100">
+                            <h3 className="text-2xl font-bold text-gray-900 mb-8">Packaging Options</h3>
+                            <ul className="space-y-4">
+                                {[
+                                    'PP bags (5kg, 10kg, 25kg, 50kg)',
+                                    'Jute bags for traditional markets',
+                                    'Non-woven bags with handles',
+                                    'Retail packs (1kg, 2kg, 5kg)',
+                                    'Custom branded packaging'
+                                ].map((item, i) => (
+                                    <li key={i} className="flex items-start">
+                                        <span className="text-brand-gold mr-3 mt-1">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 6L9 17L4 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
+                                        </span>
+                                        <span className="text-gray-600 font-medium">{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        {/* Quality Parameters */}
+                        <div className="bg-gray-50/50 p-8 rounded-3xl border border-gray-100">
+                            <h3 className="text-2xl font-bold text-gray-900 mb-8">Quality Parameters</h3>
+                            <ul className="space-y-4">
+                                {[
+                                    'Grain length: 7.0mm+ (Basmati)',
+                                    'Moisture: 12.5% max',
+                                    'Broken: 1% to 5% grades',
+                                    'No artificial polishing',
+                                    'Aged for 12-24 months'
+                                ].map((item, i) => (
+                                    <li key={i} className="flex items-start">
+                                        <span className="text-brand-gold mr-3 mt-1">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 6L9 17L4 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
+                                        </span>
+                                        <span className="text-gray-600 font-medium">{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>

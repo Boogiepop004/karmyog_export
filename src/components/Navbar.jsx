@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ArrowRight, ArrowLeft } from 'lucide-react';
 
@@ -7,6 +7,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const location = useLocation();
+    const navigate = useNavigate();
     const isHomePage = location.pathname === '/';
     const isEnquiryPage = location.pathname === '/enquiry';
 
@@ -53,16 +54,16 @@ const Navbar = () => {
                             <div className="flex-shrink-0 flex items-center gap-4">
                                 {location.pathname.startsWith('/products/') ? (
                                     <div className="flex items-center gap-4">
-                                        <Link
-                                            to="/"
+                                        <button
+                                            onClick={() => navigate(-1)}
                                             className={`
                                                 flex items-center justify-center p-2 -ml-2 rounded-full transition-all duration-200
                                                 ${scrolled || isOpen || !isHomePage ? 'text-gray-900 hover:bg-gray-100' : 'text-white hover:bg-white/10'}
                                             `}
-                                            aria-label="Back to Home"
+                                            aria-label="Go Back"
                                         >
                                             <ArrowLeft size={24} />
-                                        </Link>
+                                        </button>
 
                                         {/* Dynamic Page Title on Scroll */}
                                         <div className={`
