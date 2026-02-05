@@ -4,14 +4,14 @@ import { ArrowLeft, Search } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const riceProducts = [
-    { id: 1, name: '1121 Basmati Rice', image: '/images/product-basmati-1121.jpg' },
-    { id: 2, name: 'IR-64 Rice', image: '/images/product-ir64-rice.png' },
-    { id: 3, name: '1509 Basmati Rice', image: '/images/product-basmati-1509.jpg' },
-    { id: 4, name: 'Sona Masoori Rice', image: '/images/product-sona-masoori.jpg' },
-    { id: 5, name: 'Pusa Basmati Rice', image: '/images/product-pusa-basmati.png' },
-    { id: 6, name: 'Ponni Rice', image: '/images/product-ponni-rice.jpg' },
-    { id: 7, name: 'Traditional Basmati Rice', image: '/images/product-traditional-basmati.png' },
-    { id: 8, name: 'Broken Rice', image: '/images/product-broken-rice.jpg' },
+    { id: 1, name: '1121 Basmati Rice (Creamy Sella, Steam)', image: '/images/product-basmati-1121.jpg' },
+    { id: 2, name: 'IR-64 Rice (Parboiled, Raw 5%)', image: '/images/product-ir64-rice.png' },
+    { id: 3, name: '1509 Basmati Rice (Golden Sella)', image: '/images/product-basmati-1509.jpg' },
+    { id: 4, name: 'Sona Masoori Rice (Short Grain)', image: '/images/product-sona-masoori.jpg' },
+    { id: 5, name: 'Pusa Basmati Rice (Raw, Steam)', image: '/images/product-pusa-basmati.png' },
+    { id: 6, name: 'Ponni Rice (Thanjavur Variety)', image: '/images/product-ponni-rice.jpg' },
+    { id: 7, name: 'Traditional Basmati Rice (Dehraduns)', image: '/images/product-traditional-basmati.png' },
+    { id: 8, name: 'Broken Rice (100% Broken - A1)', image: '/images/product-broken-rice.jpg' },
 ];
 
 const Rice = () => {

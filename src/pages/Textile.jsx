@@ -4,11 +4,11 @@ import { ArrowLeft, Search } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const textileProducts = [
-    { id: 1, name: 'Raw Cotton Bales', image: '/images/textile/product_cotton_bales.png' },
-    { id: 2, name: 'Cotton Waste', image: '/images/textile/product_cotton_waste.png' },
-    { id: 3, name: 'Grey Fabric', image: '/images/textile/product_grey_fabric.png' },
-    { id: 4, name: 'Cotton Linters', image: '/images/textile/product_cotton_linters.png' },
-    { id: 5, name: 'Yarn', image: '/images/product-yarn.png' },
+    { id: 1, name: 'Raw Cotton Bales (Shankar-6, MCU-5)', image: '/images/textile/product_cotton_bales.png' },
+    { id: 2, name: 'Cotton Waste (Hard/Soft Waste)', image: '/images/textile/product_cotton_waste.png' },
+    { id: 3, name: 'Grey Fabric (Cotton/Polyster)', image: '/images/textile/product_grey_fabric.png' },
+    { id: 4, name: 'Cotton Linters (First Cut/Second Cut)', image: '/images/textile/product_cotton_linters.png' },
+    { id: 5, name: 'Yarn (Carded, Combed, Open End)', image: '/images/product-yarn.png' },
 ];
 
 const Textile = () => {

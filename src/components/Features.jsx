@@ -64,18 +64,85 @@ const Features = () => {
                         </div>
                     </div>
 
-                    {/* Stats */}
-                    <div className="border-t border-gray-100 pt-16">
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center feature-stats">
-                            {achievements.map((item, index) => (
-                                <div key={index} className="p-4">
-                                    <div className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">{item.number}</div>
-                                    <div className="text-gray-500 uppercase tracking-wider text-xs font-semibold">{item.label}</div>
+                </div>
+
+
+
+
+                {/* New Section: Operational Excellence (Process & Certifications) */}
+                <div className="border-t border-gray-100 pt-16 mt-20 md:mt-32">
+
+                    {/* Header */}
+                    <div className="text-center mb-20">
+                        <h4 className="text-brand-cyan font-bold tracking-wide uppercase text-sm mb-3">How We Work</h4>
+                        <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
+                            Operational <span className="gradient-text">Excellence</span>
+                        </h2>
+                    </div>
+
+                    {/* Export Process - Simple Connect-the-Dots Timeline */}
+                    <div className="relative max-w-6xl mx-auto mb-32">
+                        {/* Connecting Line (Desktop) */}
+                        <div className="hidden md:block absolute top-[24px] left-0 right-0 h-0.5 bg-gray-100 z-0"></div>
+
+                        {/* Connecting Line (Mobile: Vertical) */}
+                        <div className="block md:hidden absolute top-0 bottom-0 left-1/2 w-0.5 bg-gray-100 -translate-x-1/2 z-0 h-[85%] mt-6"></div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-8 relative z-10">
+                            {[
+                                { step: '01', title: 'Order Sourcing', desc: 'Direct procurement from certified partner farms.' },
+                                { step: '02', title: 'Quality Check', desc: 'Rigorous grading and lab testing standards.' },
+                                { step: '03', title: 'Packaging', desc: 'Export-safe packing with custom branding.' },
+                                { step: '04', title: 'Global Logistics', desc: 'Efficient sea/air freight booking & documentation.' }
+                            ].map((item, index) => (
+                                <div key={index} className="flex flex-col items-center text-center group bg-white md:bg-transparent py-4 md:py-0">
+                                    {/* Dot Node */}
+                                    <div className="w-12 h-12 rounded-full bg-white border-4 border-gray-100 group-hover:border-brand-cyan transition-colors duration-300 flex items-center justify-center font-bold text-brand-cyan shadow-sm mb-4 md:mb-6 z-10 relative">
+                                        {item.step}
+                                    </div>
+                                    <h3 className="text-xl font-bold text-gray-900 mb-2 md:mb-3">{item.title}</h3>
+                                    <p className="text-gray-500 text-sm leading-relaxed max-w-xs mx-auto">
+                                        {item.desc}
+                                    </p>
                                 </div>
                             ))}
                         </div>
                     </div>
+
+                    {/* Certifications - Minimalist Grid */}
+                    <div className="border-t border-gray-100 pt-16 mt-20 md:mt-32 max-w-4xl mx-auto">
+                        <div className="text-center mb-10">
+                            <h3 className="text-2xl font-bold text-gray-900">Accreditations & Memberships</h3>
+                        </div>
+                        <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+                            {[
+                                'APEDA', 'FSSAI', 'Spices Board', 'Tea Board', 'FIEO', 'ISO 9001:2015', 'Halal Certified', 'Organic Certified'
+                            ].map((cert, index) => (
+                                <div key={index} className="px-6 py-3 bg-gray-50 rounded-xl border border-gray-100 text-gray-600 font-semibold hover:bg-white hover:border-brand-cyan/30 hover:shadow-sm transition-all cursor-default">
+                                    {cert}
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
                 </div>
+
+                {/* Stats - Full Width & Centered */}
+                <div className="border-t border-gray-100 pt-16 mt-20 md:mt-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center feature-stats max-w-5xl mx-auto">
+                        {achievements.map((item, index) => (
+                            <div key={index} className="p-4">
+                                <div className="font-bold text-gray-900 mb-2 leading-none" style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)' }}>
+                                    {item.number}
+                                </div>
+                                <div className="text-gray-500 uppercase tracking-wider text-xs md:text-sm font-bold">
+                                    {item.label}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
             </div>
         </section>
     );

@@ -111,10 +111,10 @@ const Navbar = () => {
                                     <Link
                                         to="/enquiry"
                                         className={`px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 flex items-center gap-2 border group
-                                            ${scrolled || !isHomePage
-                                                ? 'bg-gray-100/80 text-gray-900 border-gray-200 hover:bg-gray-200'
-                                                : 'bg-white/10 backdrop-blur-md text-white border-white/20 hover:bg-white/20'
-                                            }
+                                            ${scrolled
+                                                ? 'bg-black/70 hover:bg-black/90'
+                                                : 'bg-black/40 hover:bg-black/60'
+                                            } backdrop-blur-md text-white border-white/10
                                         `}
                                     >
                                         Get In Touch <ArrowRight size={16} className={`transition-transform group-hover:translate-x-0.5`} />

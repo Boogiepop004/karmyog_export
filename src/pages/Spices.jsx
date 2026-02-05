@@ -4,18 +4,18 @@ import { ArrowLeft, Search } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const spices = [
-    { id: 1, name: 'Chilli', image: '/images/spices/product_chilli.png' },
-    { id: 2, name: 'Cumin (Jeera)', image: '/images/spices/product_cumin.png' },
-    { id: 3, name: 'Black Pepper', image: '/images/spices/product_black_pepper.png' },
-    { id: 4, name: 'Fenugreek (Methi)', image: '/images/spices/product_fenugreek.jpg' },
-    { id: 5, name: 'Coriander (Dhania)', image: '/images/spices/product_coriander.png' },
-    { id: 6, name: 'Mustard Seeds (Sarson/Rai)', image: '/images/spices/product_mustard.jpg' },
-    { id: 7, name: 'Fennel (Saunf)', image: '/images/spices/product_fennel.jpg' },
-    { id: 8, name: 'Cloves (Laung)', image: '/images/spices/product_cloves.png' },
-    { id: 9, name: 'Garlic (Fresh & Dehydrated)', image: '/images/spices/product_garlic.png' },
-    { id: 10, name: 'Turmeric', image: '/images/spices/product_turmeric.jpg' },
-    { id: 11, name: 'Ginger', image: '/images/spices/product_ginger.jpg' },
-    { id: 12, name: 'Turmeric Root', image: '/images/spices/product_turmeric_root.jpg' },
+    { id: 1, name: 'Chilli (S4 Sanam, Teja S17, Byadgi)', image: '/images/spices/product_chilli.png' },
+    { id: 2, name: 'Cumin (Singapore, European Quality)', image: '/images/spices/product_cumin.png' },
+    { id: 3, name: 'Black Pepper (Malabar, Tellicherry - 500GL)', image: '/images/spices/product_black_pepper.png' },
+    { id: 4, name: 'Fenugreek (Methi - Sortex Clean)', image: '/images/spices/product_fenugreek.jpg' },
+    { id: 5, name: 'Coriander (Eagle, Scooter, Indori)', image: '/images/spices/product_coriander.png' },
+    { id: 6, name: 'Mustard Seeds (Black/Yellow/Brown)', image: '/images/spices/product_mustard.jpg' },
+    { id: 7, name: 'Fennel (Saunf - Singapore/Europe)', image: '/images/spices/product_fennel.jpg' },
+    { id: 8, name: 'Cloves (Lal Pari, Hand Picked)', image: '/images/spices/product_cloves.png' },
+    { id: 9, name: 'Garlic (Ooty, Desi - Fresh/Dehydrated)', image: '/images/spices/product_garlic.png' },
+    { id: 10, name: 'Turmeric Fingers (Salem, Nizamabad)', image: '/images/spices/product_turmeric.jpg' },
+    { id: 11, name: 'Ginger (Fresh Washed/Dry)', image: '/images/spices/product_ginger.jpg' },
+    { id: 12, name: 'Turmeric Root (Mother Bulb)', image: '/images/spices/product_turmeric_root.jpg' },
 ];
 
 const Spices = () => {

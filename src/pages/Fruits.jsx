@@ -4,21 +4,21 @@ import { ArrowLeft, Search } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const fruits = [
-    { id: 1, name: 'Pomegranate', image: '/images/fruits/product_pomegranate_new.png' },
-    { id: 2, name: 'Dry Semi Husked Coconut', image: '/images/fruits/product_coconut_dry_real.png' }, // User provided real image
-    { id: 3, name: 'G9 Banana (Green)', image: '/images/fruits/product_banana_g9_green_real.png' }, // User provided real image
-    { id: 4, name: 'G9 Banana (Yellow)', image: '/images/fruits/product_banana_g9_yellow_new.jpg' },
-    { id: 5, name: 'Banana Leaf', image: '/images/fruits/product_banana_leaf_real.png' },
-    { id: 6, name: 'Green Grapes', image: '/images/fruits/product_grapes_green_new.png' },
-    { id: 7, name: 'Red Globe Grapes', image: '/images/fruits/product_grapes_red_new.png' },
-    { id: 8, name: 'Black Grapes', image: '/images/fruits/product_grapes_black_new.png' },
-    { id: 9, name: 'Guava', image: '/images/fruits/product_guava_new.jpg' },
-    { id: 10, name: 'Badami Mango', image: '/images/fruits/product_mango_badami_1769750981536.png' },
-    { id: 11, name: 'Alphonso Mango', image: '/images/fruits/product_mango_alphonso_1769750996775.png' },
-    { id: 12, name: 'Rajapuri Mango', image: '/images/fruits/product_mango_rajapuri_1769751012387.png' },
-    { id: 13, name: 'YB Banana (Yelakki)', image: '/images/fruits/product_banana_yb_1769751030918.png' },
-    { id: 14, name: 'RK Banana (Rasthali)', image: '/images/fruits/product_banana_rk_1769751047065.png' },
-    { id: 15, name: 'Indian Gooseberry (Amla)', image: '/images/fruits/product_gooseberry_1769751063015.png' },
+    { id: 1, name: 'Pomegranate (Bhagawa, Ganesh)', image: '/images/fruits/product_pomegranate_new.png' },
+    { id: 2, name: 'Dry Semi Husked Coconut (Pollachi)', image: '/images/fruits/product_coconut_dry_real.png' }, // User provided real image
+    { id: 3, name: 'G9 Banana (Cavendish Green)', image: '/images/fruits/product_banana_g9_green_real.png' }, // User provided real image
+    { id: 4, name: 'G9 Banana (Cavendish Yellow)', image: '/images/fruits/product_banana_g9_yellow_new.jpg' },
+    { id: 5, name: 'Banana Leaf (Fresh Export Quality)', image: '/images/fruits/product_banana_leaf_real.png' },
+    { id: 6, name: 'Green Grapes (Thompson Seedless, Sonaka)', image: '/images/fruits/product_grapes_green_new.png' },
+    { id: 7, name: 'Red Globe Grapes (Jumbo)', image: '/images/fruits/product_grapes_red_new.png' },
+    { id: 8, name: 'Black Grapes (Sharad Seedless)', image: '/images/fruits/product_grapes_black_new.png' },
+    { id: 9, name: 'Guava (L-49, Allahabad Safeda)', image: '/images/fruits/product_guava_new.jpg' },
+    { id: 10, name: 'Badami Mango (Alphonso of South)', image: '/images/fruits/product_mango_badami_1769750981536.png' },
+    { id: 11, name: 'Alphonso Mango (Devgad, Ratnagiri)', image: '/images/fruits/product_mango_alphonso_1769750996775.png' },
+    { id: 12, name: 'Rajapuri Mango (Premium Large)', image: '/images/fruits/product_mango_rajapuri_1769751012387.png' },
+    { id: 13, name: 'Yelakki Banana (Tiny, Sweet)', image: '/images/fruits/product_banana_yb_1769751030918.png' },
+    { id: 14, name: 'Rasthali Banana (Silk)', image: '/images/fruits/product_banana_rk_1769751047065.png' },
+    { id: 15, name: 'Indian Gooseberry (Amla - Banarasi)', image: '/images/fruits/product_gooseberry_1769751063015.png' },
 ];
 
 const Fruits = () => {

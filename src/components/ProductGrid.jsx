@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Sprout, Wheat, ChefHat, Shirt, Mountain, Citrus, ArrowUpRight, ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
@@ -48,33 +48,9 @@ const products = [
 
 const ProductCard = ({ product }) => {
     const navigate = useNavigate();
-    const cardRef = useRef(null);
-    const [isCentered, setIsCentered] = useState(false);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                setIsCentered(entry.isIntersecting);
-            },
-            {
-                root: null,
-                rootMargin: '-45% 0px -45% 0px', // Triggers only when element is in the middle 10% of screen
-                threshold: 0
-            }
-        );
-
-        if (cardRef.current) {
-            observer.observe(cardRef.current);
-        }
-
-        return () => {
-            if (cardRef.current) observer.unobserve(cardRef.current);
-        };
-    }, []);
 
     return (
         <div
-            ref={cardRef}
             onClick={() => product.link && navigate(product.link)}
             className={`rounded-[2rem] hover:shadow-soft transition-all duration-300 group relative overflow-hidden ${product.link ? 'cursor-pointer' : ''} ${product.image ? 'aspect-[4/3] md:aspect-auto' : 'bg-white p-8 border border-transparent hover:border-brand-cyan/20'}`}
         >
@@ -89,20 +65,16 @@ const ProductCard = ({ product }) => {
                             }`}></div>
                     </div>
 
-                    <div className="relative h-full flex flex-col justify-between p-8 text-white min-h-[280px] z-10">
+                    <div className="relative h-full flex flex-col justify-between p-8 text-white min-h-[280px] z-10 pb-36">
                         <h3 className="text-3xl font-bold tracking-tight drop-shadow-md">{product.name}</h3>
-                        <div className="mt-auto">
-                            <span className="text-sm font-medium tracking-widest uppercase border-b border-white/50 pb-0.5 group-hover:border-white transition-all opacity-0 group-hover:opacity-100 duration-500 translate-y-2 group-hover:translate-y-0">See</span>
-                        </div>
+                        {/* "See" text removed */}
                     </div>
 
-                    {/* Info Card - Slides up on Hover (Desktop) or Center Scroll (Mobile) */}
+                    {/* Info Card - Permanent & Auto Height */}
                     <div className={`
-                        absolute bottom-0 left-0 right-0 h-[55%] bg-black/60 backdrop-blur-sm p-6 text-white transform transition-transform duration-500 ease-out z-20 flex flex-col justify-center
-                        ${isCentered ? 'translate-y-0' : 'translate-y-full'} 
-                        md:translate-y-full md:group-hover:translate-y-0
+                        absolute bottom-0 left-0 right-0 h-auto bg-black/40 backdrop-blur-sm p-6 text-white z-20 flex flex-col justify-center
                     `}>
-                        <p className="text-sm md:text-base leading-relaxed font-medium">
+                        <p className="text-sm md:text-base leading-relaxed font-medium text-gray-200">
                             {product.desc}
                         </p>
                     </div>
@@ -126,6 +98,43 @@ const ProductCard = ({ product }) => {
     );
 };
 
+const DesktopProductRow = ({ product, index }) => {
+    const navigate = useNavigate();
+    const isEven = index % 2 === 0;
+
+    return (
+        <div className={`flex flex-col md:flex-row ${isEven ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-8 md:gap-12 group cursor-pointer`}
+            onClick={() => product.link && navigate(product.link)}>
+
+            {/* Text Side */}
+            <div className="flex-1 space-y-4 md:text-left">
+                <h3 className="text-3xl md:text-4xl font-bold text-gray-900 group-hover:text-brand-cyan transition-colors duration-300">
+                    {product.name}
+                </h3>
+                <p className="text-gray-600 text-lg leading-relaxed max-w-xl">
+                    {product.desc}
+                </p>
+                <div className="flex items-center text-brand-gold font-semibold group-hover:gap-2 transition-all pt-2">
+                    <span className="uppercase tracking-widest text-sm">View Products</span>
+                    <ArrowRight size={20} />
+                </div>
+            </div>
+
+            {/* Image Box Side */}
+            <div className="flex-1 w-full">
+                <div className="relative rounded-[2rem] overflow-hidden aspect-[4/3] shadow-lg group-hover:shadow-soft transition-all duration-500">
+                    <img
+                        src={product.image}
+                        alt={product.name}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
 const ProductGrid = () => {
     return (
         <section id="products" className="py-24 bg-brand-gray/30">
@@ -140,11 +149,20 @@ const ProductGrid = () => {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {/* Mobile Grid View */}
+                <div className="grid grid-cols-1 gap-8 md:hidden">
                     {products.map((product) => (
                         <ProductCard key={product.id} product={product} />
                     ))}
                 </div>
+
+                {/* Desktop Zig-Zag View */}
+                <div className="hidden md:flex flex-col gap-12">
+                    {products.map((product, index) => (
+                        <DesktopProductRow key={product.id} product={product} index={index} />
+                    ))}
+                </div>
+
             </div>
         </section>
     );
