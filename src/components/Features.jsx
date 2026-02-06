@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { ShieldCheck, Globe2, Clock, Truck, ArrowRight } from 'lucide-react';
 
 const achievements = [
@@ -17,7 +18,7 @@ const Features = () => {
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
-                {/* Why Choose Us */}
+                {/* Why Choose Us / About Summary */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24">
                     <div>
                         <div className="inline-block px-3 py-1 rounded-full bg-brand-cyan/10 text-brand-cyan font-bold tracking-wide uppercase text-xs mb-4">
@@ -27,9 +28,13 @@ const Features = () => {
                             Bridging Borders with <br />
                             <span className="gradient-text">Trust & Excellence</span>
                         </h3>
-                        <p className="text-gray-600 text-lg mb-6 leading-relaxed">
+                        <p className="text-gray-600 text-lg mb-8 leading-relaxed">
                             We are a Surat-based merchant exporter dedicated to sourcing the best of India. From fresh agricultural produce to quality textiles, we focus on straightforward, reliable trade. We work directly with producers to ensure quality and handle the logistics so you don't have to.
                         </p>
+
+                        <Link to="/about" className="inline-flex items-center font-bold text-brand-cyan hover:text-brand-black transition-colors group">
+                            Read More About Us <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                        </Link>
 
                     </div>
 
@@ -67,17 +72,18 @@ const Features = () => {
                 </div>
 
 
-
-
                 {/* New Section: Operational Excellence (Process & Certifications) */}
                 <div className="border-t border-gray-100 pt-16 mt-20 md:mt-32">
 
                     {/* Header */}
                     <div className="text-center mb-20">
                         <h4 className="text-brand-cyan font-bold tracking-wide uppercase text-sm mb-3">How We Work</h4>
-                        <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
+                        <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
                             Operational <span className="gradient-text">Excellence</span>
                         </h2>
+                        <Link to="/process" className="inline-flex items-center font-bold text-brand-cyan hover:text-brand-black transition-colors group">
+                            View Detailed Process <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                        </Link>
                     </div>
 
                     {/* Export Process - Simple Connect-the-Dots Timeline */}
@@ -112,7 +118,10 @@ const Features = () => {
                     {/* Certifications - Minimalist Grid */}
                     <div className="border-t border-gray-100 pt-16 mt-20 md:mt-32 max-w-4xl mx-auto">
                         <div className="text-center mb-10">
-                            <h3 className="text-2xl font-bold text-gray-900">Accreditations & Memberships</h3>
+                            <h3 className="text-2xl font-bold text-gray-900 mb-4">Accreditations & Memberships</h3>
+                            <Link to="/certifications" className="inline-flex items-center font-bold text-brand-cyan hover:text-brand-black transition-colors group">
+                                See All Certifications <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                            </Link>
                         </div>
                         <div className="flex flex-wrap justify-center gap-4 md:gap-6">
                             {[

@@ -10,7 +10,9 @@ import Fruits from './pages/Fruits';
 import Spices from './pages/Spices';
 import Vegetables from './pages/Vegetables';
 import Textile from './pages/Textile';
-import Rice from './pages/Rice';
+import About from './pages/About';
+import Process from './pages/Process';
+import Certifications from './pages/Certifications';
 
 import ScrollToTop from './components/ScrollToTop';
 
@@ -30,6 +32,7 @@ function App() {
                         </>
                     } />
                     <Route path="/enquiry" element={<Enquiry />} />
+
                     <Route path="/products/fruits" element={<Fruits />} />
                     <Route path="/products/vegetables" element={<Vegetables />} />
                     <Route path="/products/spices" element={<Spices />} />
