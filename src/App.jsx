@@ -32,6 +32,9 @@ function App() {
                         </>
                     } />
                     <Route path="/enquiry" element={<Enquiry />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/process" element={<Process />} />
+                    <Route path="/certifications" element={<Certifications />} />
 
                     <Route path="/products/fruits" element={<Fruits />} />
                     <Route path="/products/vegetables" element={<Vegetables />} />
