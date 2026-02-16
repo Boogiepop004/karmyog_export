@@ -80,7 +80,7 @@ const Navbar = () => {
                                         <img
                                             src="/images/logo_main.png"
                                             alt="Montara Exim"
-                                            className="h-10 md:h-12 w-auto object-contain"
+                                            className="h-16 md:h-20 w-auto object-contain"
                                         />
                                     </Link>
                                 )}
