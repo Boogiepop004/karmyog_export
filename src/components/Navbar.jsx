@@ -49,7 +49,7 @@ const Navbar = () => {
                     ${scrolled || isOpen ? 'bg-white/95 backdrop-blur-sm shadow-sm border-gray-100' : 'bg-transparent'}
                 `}>
                     <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
-                        <div className="flex items-center py-4">
+                        <div className="flex items-center py-3"> {/* Reduced padding for original compact feel */}
 
                             {/* Left Section: Logo or Back Button */}
                             <div className="flex-shrink-0 flex items-center gap-4">
@@ -76,11 +76,15 @@ const Navbar = () => {
                                         </div>
                                     </div>
                                 ) : (
-                                    <Link to="/" className="flex items-center">
+                                    <Link to="/" className="flex items-center relative group">
+                                        {/* Spacer to reserve Width for the absolute logo */}
+                                        <div className="h-10 w-40"></div>
+
+                                        {/* The Actual Big Logo - Using absolute to not push header height */}
                                         <img
                                             src="/images/logo_main.png"
                                             alt="Montara Exim"
-                                            className="h-20 md:h-28 w-auto object-contain"
+                                            className="absolute top-1/2 left-0 -translate-y-1/2 h-24 md:h-32 w-auto max-w-none object-contain transition-transform duration-300 origin-left"
                                         />
                                     </Link>
                                 )}
@@ -102,7 +106,7 @@ const Navbar = () => {
                                         <Component
                                             key={link.name}
                                             {...props}
-                                            className={`text-[15px] font-medium transition-colors duration-200 hover:text-brand-cyan ${scrolled || !isHomePage ? 'text-gray-900' : 'text-white'}`}
+                                            className={`text-base font-bold transition-colors duration-200 hover:text-brand-cyan ${scrolled || !isHomePage ? 'text-gray-900' : 'text-white'}`}
                                         >
                                             {link.name}
                                         </Component>
