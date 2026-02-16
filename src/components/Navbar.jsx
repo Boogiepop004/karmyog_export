@@ -84,7 +84,7 @@ const Navbar = () => {
                                         <img
                                             src="/images/logo_main.png"
                                             alt="Montara Exim"
-                                            className="absolute top-1/2 left-0 -translate-y-1/2 h-24 md:h-32 w-auto max-w-none object-contain transition-transform duration-300 origin-left"
+                                            className="absolute top-1/2 left-0 -translate-y-1/2 h-32 w-auto max-w-none object-contain transition-transform duration-300 origin-left"
                                         />
                                     </Link>
                                 )}
