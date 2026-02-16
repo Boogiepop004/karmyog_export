@@ -46,7 +46,7 @@ const products = [
     },
 ];
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, variant }) => {
     const navigate = useNavigate();
 
     return (
@@ -65,22 +65,23 @@ const ProductCard = ({ product }) => {
                             }`}></div>
                     </div>
 
-                    <div className="relative h-full flex flex-col justify-between p-8 text-white min-h-[280px] z-10 pb-36">
+                    <div className={`relative h-full flex flex-col justify-between p-8 text-white min-h-[280px] z-10 ${variant === 'simple' ? 'pb-8' : 'pb-36'}`}>
                         <h3 className="text-3xl font-bold tracking-tight drop-shadow-md">{product.name}</h3>
-                        {/* "See" text removed */}
                     </div>
 
-                    {/* Info Card - Permanent & Auto Height */}
-                    <div className={`
-                        absolute bottom-0 left-0 right-0 h-auto bg-black/40 backdrop-blur-sm p-6 text-white z-20 flex flex-col justify-center
-                    `}>
-                        <p className="text-sm md:text-base leading-relaxed font-medium text-gray-200">
-                            {product.desc}
-                        </p>
-                    </div>
+                    {/* Info Card - Hide if simple variant */}
+                    {variant !== 'simple' && (
+                        <div className={`
+                            absolute bottom-0 left-0 right-0 h-auto bg-black/40 backdrop-blur-sm p-6 text-white z-20 flex flex-col justify-center
+                        `}>
+                            <p className="text-sm md:text-base leading-relaxed font-medium text-gray-200">
+                                {product.desc}
+                            </p>
+                        </div>
+                    )}
                 </>
             ) : (
-                // Icon Card Layout (Fallback for non-image items if any)
+                // Icon Card Layout
                 <>
                     <div className={`w-16 h-16 rounded-2xl ${product.color} flex items-center justify-center mb-6 text-gray-900 group-hover:scale-110 transition-transform`}>
                         {product.icon}
@@ -92,7 +93,6 @@ const ProductCard = ({ product }) => {
             )}
 
             <div className="flex items-center text-brand-cyan font-semibold group-hover:gap-2 transition-all">
-                {/* Removed bottom 'Learn More' link to avoid clutter with new info card */}
             </div>
         </div>
     );
@@ -135,7 +135,7 @@ const DesktopProductRow = ({ product, index }) => {
     );
 };
 
-const ProductGrid = () => {
+const ProductGrid = ({ variant = 'simple' }) => {
     return (
         <section id="products" className="py-24 bg-brand-gray/30">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -149,19 +149,32 @@ const ProductGrid = () => {
                     </div>
                 </div>
 
-                {/* Mobile Grid View */}
-                <div className="grid grid-cols-1 gap-8 md:hidden">
-                    {products.map((product) => (
-                        <ProductCard key={product.id} product={product} />
-                    ))}
-                </div>
+                {/* Simple Grid Variant (Home Page) */}
+                {variant === 'simple' && (
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {products.map((product) => (
+                            <ProductCard key={product.id} product={product} variant={variant} />
+                        ))}
+                    </div>
+                )}
 
-                {/* Desktop Zig-Zag View */}
-                <div className="hidden md:flex flex-col gap-12">
-                    {products.map((product, index) => (
-                        <DesktopProductRow key={product.id} product={product} index={index} />
-                    ))}
-                </div>
+                {/* Detailed Zig-Zag Variant (Products Page) */}
+                {variant === 'detailed' && (
+                    <div className="flex flex-col gap-12">
+                        {/* Mobile: Stack of Cards */}
+                        <div className="grid grid-cols-1 gap-8 md:hidden">
+                            {products.map((product) => (
+                                <ProductCard key={product.id} product={product} variant={variant} />
+                            ))}
+                        </div>
+                        {/* Desktop: Zig-Zag Rows */}
+                        <div className="hidden md:flex flex-col gap-12">
+                            {products.map((product, index) => (
+                                <DesktopProductRow key={product.id} product={product} index={index} />
+                            ))}
+                        </div>
+                    </div>
+                )}
 
             </div>
         </section>

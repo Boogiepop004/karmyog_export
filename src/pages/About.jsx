@@ -4,123 +4,103 @@ import { ShieldCheck, Globe2, Clock, Truck, Users, Target, Heart } from 'lucide-
 
 const About = () => {
     return (
-        <div className="pt-20 pb-16 min-h-screen bg-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-                {/* Hero / Introduction */}
-                <div className="text-center mb-24 max-w-4xl mx-auto">
-                    <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-8 tracking-tight">
-                        About <span className="gradient-text">Montara Exim</span>
-                    </h1>
-                    <p className="text-xl text-gray-600 leading-relaxed">
-                        We are a Surat-based merchant exporter dedicated to bridging the gap between India's finest producers and the global market. With a commitment to quality and transparency, we facilitate seamless trade of agricultural produce, spices, and textiles.
+        <div className="pt-20 min-h-screen bg-white">
+            {/* Hero Section */}
+            <div className="bg-brand-black text-white py-20 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-brand-cyan/20 to-transparent pointer-events-none"></div>
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                    <h1 className="text-4xl md:text-6xl font-bold mb-6">About Us</h1>
+                    <p className="text-xl text-gray-300 max-w-2xl leading-relaxed">
+                        We are Montara Exim, your trusted partner in global trade. From the heart of India to the world, we deliver quality, reliability, and excellence.
                     </p>
                 </div>
+            </div>
 
-                {/* Vision & Mission Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-32 items-stretch">
-                    <div className="bg-gray-50/50 p-10 rounded-3xl border border-gray-100 flex flex-col justify-center">
-                        <div className="w-16 h-16 rounded-2xl bg-brand-cyan/10 flex items-center justify-center mb-6">
-                            <Target className="text-brand-cyan w-8 h-8" />
+            {/* Main Content */}
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+
+                {/* Our Story */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24">
+                    <div>
+                        <h4 className="text-brand-cyan font-bold tracking-wide uppercase text-sm mb-3">Who We Are</h4>
+                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+                            Your Gateway to <span className="gradient-text">Premium Indian Produce</span>
+                        </h2>
+                        <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
+                            <p>
+                                Founded in Surat, Gujarat, Montara Exim has grown from a local trading house to a global merchant exporter. We specialize in sourcing the finest agricultural products, spices, and textiles directly from farmers and manufacturers across India.
+                            </p>
+                            <p>
+                                Our mission is simple: to bridge the gap between Indian producers and global markets. We believe in fair trade, transparency, and building lasting relationships with our clients.
+                            </p>
                         </div>
-                        <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h2>
-                        <p className="text-gray-600 leading-relaxed">
-                            To be the most trusted global partner for sourcing Indian products, recognized for our integrity, operational excellence, and commitment to sustainable trade practices.
-                        </p>
                     </div>
-                    <div className="bg-gray-50/50 p-10 rounded-3xl border border-gray-100 flex flex-col justify-center">
-                        <div className="w-16 h-16 rounded-2xl bg-orange-50 flex items-center justify-center mb-6">
-                            <Heart className="text-orange-500 w-8 h-8" />
+                    <div className="relative">
+                        <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl bg-gray-100">
+                            {/* Placeholder for About Image - could use a generic office or farm image */}
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center text-gray-400">
+                                <span className="text-lg">About Us Image</span>
+                            </div>
                         </div>
-                        <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h2>
-                        <p className="text-gray-600 leading-relaxed">
-                            To empower Indian farmers and manufacturers by providing them a global platform, while ensuring our international clients receive only the highest quality products with unmatched service and reliability.
-                        </p>
+                        {/* Floating Stat Card */}
+                        <div className="absolute -bottom-8 -left-8 bg-white p-6 rounded-xl shadow-xl border border-gray-100 hidden md:block">
+                            <div className="flex items-center gap-4">
+                                <div className="p-3 bg-brand-cyan/10 rounded-full text-brand-cyan">
+                                    <Globe2 size={24} />
+                                </div>
+                                <div>
+                                    <div className="text-2xl font-bold text-gray-900">15+</div>
+                                    <div className="text-xs text-gray-500 font-bold uppercase tracking-wider">Countries Served</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                {/* Core Values */}
-                <div className="mb-32">
+                {/* Values */}
+                <div className="mb-24">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl font-bold text-gray-900">Our Core Values</h2>
+                        <p className="text-gray-500 mt-4 max-w-2xl mx-auto">The principles that drive every shipment, every deal, and every relationship.</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {[
-                            { icon: ShieldCheck, color: 'text-blue-500', bg: 'bg-blue-50', title: 'Integrity', desc: 'We believe in honest, transparent dealing. No hidden costs, no compromises on quality.' },
-                            { icon: Globe2, color: 'text-green-500', bg: 'bg-green-50', title: 'Global Outlook', desc: 'Understanding international standards and market nuances to serve diverse client needs.' },
-                            { icon: Users, color: 'text-purple-500', bg: 'bg-purple-50', title: 'Partnership', desc: 'Building long-term relationships with both our suppliers and our buyers.' }
+                            { icon: Target, title: 'Integrity', desc: 'We conduct business with unwavering honesty and transparency.' },
+                            { icon: Heart, title: 'Quality', desc: 'We never compromise on the standards of our products.' },
+                            { icon: Users, title: 'Customer First', desc: 'Your satisfaction and success are our top priorities.' }
                         ].map((item, index) => (
-                            <div key={index} className="p-8 rounded-2xl border border-gray-100 hover:shadow-lg transition-shadow bg-white text-center">
-                                <div className={`w-14 h-14 rounded-xl ${item.bg} flex items-center justify-center mb-6 mx-auto`}>
-                                    <item.icon className={`${item.color} w-7 h-7`} />
+                            <div key={index} className="bg-gray-50 p-8 rounded-2xl text-center hover:bg-white hover:shadow-lg transition-all duration-300 border border-transparent hover:border-gray-100">
+                                <div className="w-16 h-16 mx-auto bg-brand-gold/10 rounded-full flex items-center justify-center text-brand-gold mb-6">
+                                    <item.icon size={32} />
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
-                                <p className="text-gray-500 leading-relaxed">{item.desc}</p>
+                                <p className="text-gray-600">{item.desc}</p>
                             </div>
                         ))}
                     </div>
                 </div>
 
-                {/* Why Choose Us (Detailed) */}
-                <div className="bg-gray-900 rounded-[3rem] p-12 md:p-20 text-white relative overflow-hidden">
-                    {/* Decorative Gradients */}
-                    <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-cyan/20 rounded-full blur-[100px] pointer-events-none -translate-y-1/2 translate-x-1/2"></div>
-                    <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-orange-500/10 rounded-full blur-[100px] pointer-events-none translate-y-1/2 -translate-x-1/2"></div>
-
-                    <div className="relative z-10">
-                        <div className="text-center mb-16">
-                            <h2 className="text-3xl md:text-5xl font-bold mb-6">Why Partner With Us?</h2>
-                            <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-                                In a complex global market, we simplify trade through reliability, quality assurance, and logistical expertise.
-                            </p>
-                        </div>
-
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
-                            <div className="flex gap-6">
-                                <div className="w-12 h-12 rounded-lg bg-white/10 flex-shrink-0 flex items-center justify-center">
-                                    <ShieldCheck className="text-brand-cyan w-6 h-6" />
+                {/* Why Choose Us - Expanded */}
+                <div>
+                    <div className="text-center mb-16">
+                        <h4 className="text-brand-cyan font-bold tracking-wide uppercase text-sm mb-3">Why Us</h4>
+                        <h2 className="text-3xl font-bold text-gray-900">The Montara Advantage</h2>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        {[
+                            { icon: ShieldCheck, color: 'orange', title: 'Quality Assured', desc: 'Every shipment undergoes rigorous multi-stage quality checks.' },
+                            { icon: Globe2, color: 'blue', title: 'Global Network', desc: 'Strong logistics partnerships ensure timely delivery anywhere.' },
+                            { icon: Truck, color: 'green', title: 'Efficient Logistics', desc: 'Optimized supply chain management for fresh delivery.' },
+                            { icon: Clock, color: 'purple', title: '24/7 Support', desc: ' Dedicated account managers available round the clock.' }
+                        ].map((item, index) => (
+                            <div key={index} className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:border-brand-cyan/30 hover:shadow-md transition-colors group">
+                                <div className={`w-12 h-12 rounded-xl bg-${item.color}-50 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+                                    <item.icon className={`text-${item.color}-500 w-6 h-6`} />
                                 </div>
-                                <div>
-                                    <h3 className="text-xl font-bold mb-3">Uncompromising Quality</h3>
-                                    <p className="text-gray-400 leading-relaxed">
-                                        Every shipment undergoes rigorous multi-stage quality checks. We work only with certified growers and manufacturers who meet our strict standards.
-                                    </p>
-                                </div>
+                                <h4 className="text-gray-900 font-bold text-lg mb-2">{item.title}</h4>
+                                <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
                             </div>
-                            <div className="flex gap-6">
-                                <div className="w-12 h-12 rounded-lg bg-white/10 flex-shrink-0 flex items-center justify-center">
-                                    <Clock className="text-orange-400 w-6 h-6" />
-                                </div>
-                                <div>
-                                    <h3 className="text-xl font-bold mb-3">Timely Delivery</h3>
-                                    <p className="text-gray-400 leading-relaxed">
-                                        We understand the value of time in trade. Our optimized supply chain and logistics partnerships ensure your goods arrive on schedule.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="flex gap-6">
-                                <div className="w-12 h-12 rounded-lg bg-white/10 flex-shrink-0 flex items-center justify-center">
-                                    <Globe2 className="text-blue-400 w-6 h-6" />
-                                </div>
-                                <div>
-                                    <h3 className="text-xl font-bold mb-3">Global Expertise</h3>
-                                    <p className="text-gray-400 leading-relaxed">
-                                        Navigating customs, documentation, and international regulations can be daunting. We handle the complexity so you can focus on your business.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="flex gap-6">
-                                <div className="w-12 h-12 rounded-lg bg-white/10 flex-shrink-0 flex items-center justify-center">
-                                    <Truck className="text-green-400 w-6 h-6" />
-                                </div>
-                                <div>
-                                    <h3 className="text-xl font-bold mb-3">End-to-End Solutions</h3>
-                                    <p className="text-gray-400 leading-relaxed">
-                                        From sourcing to final delivery, we provide a comprehensive solution that includes packaging, freight booking, and customs clearance.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
 

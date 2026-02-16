@@ -1,94 +1,83 @@
 import React from 'react';
-import { Award, Shield, FileCheck, Globe } from 'lucide-react';
+import { Award, CheckCircle } from 'lucide-react';
 
 const Certifications = () => {
-
     const certs = [
         {
             name: 'APEDA',
             full: 'Agricultural and Processed Food Products Export Development Authority',
-            desc: 'Ensures our agricultural exports meet strict quality standards set by the Government of India.',
-            type: 'Government Recognized'
+            desc: 'Recognized by the Ministry of Commerce & Industry, Govt. of India, ensuring quality standards for agricultural exports.'
         },
         {
             name: 'FSSAI',
             full: 'Food Safety and Standards Authority of India',
-            desc: 'Validates that our food products undergo necessary quality checks and are safe for consumption.',
-            type: 'Food Safety'
+            desc: 'Verifies that our food products meet science-based standards for safety and nutritional quality.'
         },
         {
             name: 'Spices Board',
-            full: 'Spices Board of India',
-            desc: 'Mandatory certification ensuring the purity and quality of our spice exports.',
-            type: 'Commodity Specific'
-        },
-        {
-            name: 'Tea Board',
-            full: 'Tea Board of India',
-            desc: 'Certification for export of premium Indian tea, adhering to global quality benchmarks.',
-            type: 'Commodity Specific'
+            full: 'Spices Board India',
+            desc: 'Certification for the export of quality spices, ensuring purity and adherence to international grade standards.'
         },
         {
             name: 'ISO 9001:2015',
             full: 'International Organization for Standardization',
-            desc: 'Demonstrates our commitment to quality management systems and consistent service improvement.',
-            type: 'Quality Management'
-        },
-        {
-            name: 'IEC',
-            full: 'Import Export Code',
-            desc: 'Primary government license authorizing us to carry out international trade activities.',
-            type: 'Trade License'
+            desc: 'Demonstrates our commitment to quality management systems and consistent customer satisfaction.'
         },
         {
             name: 'FIEO',
             full: 'Federation of Indian Export Organisations',
-            desc: 'Membership bodies that connect us with global trade networks and policy updates.',
-            type: 'Trade Body'
+            desc: 'Apex body of Indian export promotion organizations, representing our standing in the global trade community.'
+        },
+        {
+            name: 'Halal Certified',
+            full: 'Halal Certification',
+            desc: 'Ensures our products are prepared in accordance with Islamic dietary laws for relevant markets.'
         }
     ];
 
     return (
-        <div className="pt-20 pb-16 min-h-screen bg-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-                {/* Header */}
-                <div className="text-center mb-24 max-w-4xl mx-auto">
-                    <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-8 tracking-tight">
-                        Certifications & Compliance
-                    </h1>
-                    <p className="text-xl text-gray-600 leading-relaxed">
-                        Trust is built on verification. We are fully licensed, certified, and compliant with all Indian and International trade regulations to ensure seamless exports.
+        <div className="pt-20 min-h-screen bg-white">
+            {/* Hero Section */}
+            <div className="bg-brand-black text-white py-20 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-brand-cyan/20 to-transparent pointer-events-none"></div>
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                    <h1 className="text-4xl md:text-6xl font-bold mb-6">Certifications</h1>
+                    <p className="text-xl text-gray-300 max-w-2xl leading-relaxed">
+                        We adhere to the highest international standards. Our accreditations are a testament to our commitment to quality.
                     </p>
                 </div>
+            </div>
 
-                {/* Certifications Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-32">
+            {/* Main Content */}
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {certs.map((cert, index) => (
-                        <div key={index} className="bg-gray-50/50 p-8 rounded-3xl border border-gray-100 hover:border-brand-cyan/30 hover:shadow-lg transition-all group">
-                            <div className="flex items-center justify-between mb-6">
-                                <span className="px-3 py-1 rounded-full bg-white border border-gray-200 text-xs font-bold uppercase tracking-wider text-gray-500">
-                                    {cert.type}
-                                </span>
-                                <Shield className="text-brand-cyan w-6 h-6 opacity-50 group-hover:opacity-100 transition-opacity" />
+                        <div key={index} className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg hover:border-brand-cyan/30 transition-all duration-300">
+                            <div className="flex items-start gap-6">
+                                <div className="p-4 bg-brand-gold/10 rounded-xl text-brand-gold shrink-0">
+                                    <Award size={32} />
+                                </div>
+                                <div>
+                                    <h3 className="text-2xl font-bold text-gray-900 mb-2">{cert.name}</h3>
+                                    <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">{cert.full}</h4>
+                                    <p className="text-gray-600 leading-relaxed">
+                                        {cert.desc}
+                                    </p>
+                                </div>
                             </div>
-                            <h2 className="text-2xl font-bold text-gray-900 mb-2">{cert.name}</h2>
-                            <p className="text-sm font-semibold text-gray-400 mb-4">{cert.full}</p>
-                            <p className="text-gray-600 leading-relaxed text-sm">
-                                {cert.desc}
-                            </p>
                         </div>
                     ))}
                 </div>
 
-                {/* Quality Policy */}
-                <div className="bg-brand-cyan/5 rounded-[3rem] p-12 md:p-20 text-center border border-brand-cyan/10">
-                    <div className="w-16 h-16 rounded-2xl bg-brand-cyan text-white flex items-center justify-center mx-auto mb-8 shadow-lg shadow-brand-cyan/30">
-                        <Award className="w-8 h-8" />
+                {/* Compliance Statement */}
+                <div className="mt-20 bg-gray-50 rounded-3xl p-10 md:p-16 border border-gray-100 text-center">
+                    <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <CheckCircle size={32} />
                     </div>
-                    <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Quality Policy</h2>
-                    <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
-                        "We are committed to delivering products that not only meet but exceed our customers' expectations. Through continuous improvement of our processes and strict adherence to food safety standards, we ensure that every shipment carries the stamp of quality and trust."
+                    <h2 className="text-3xl font-bold text-gray-900 mb-6">100% Compliant</h2>
+                    <p className="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
+                        Montara Exim ensures that every consignment is accompanied by the necessary phytosanitary certificates, certificate of origin, and lab test reports as required by the importing country. We stay updated with global trade regulations to ensure hassle-free clearance.
                     </p>
                 </div>
 

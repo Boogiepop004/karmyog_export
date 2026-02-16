@@ -10,6 +10,8 @@ import Fruits from './pages/Fruits';
 import Spices from './pages/Spices';
 import Vegetables from './pages/Vegetables';
 import Textile from './pages/Textile';
+import Rice from './pages/Rice';
+import Products from './pages/Products';
 import About from './pages/About';
 import Process from './pages/Process';
 import Certifications from './pages/Certifications';
@@ -27,15 +29,15 @@ function App() {
                     <Route path="/" element={
                         <>
                             <Hero />
-                            <ProductGrid />
+                            <ProductGrid variant="simple" />
                             <Features />
                         </>
                     } />
-                    <Route path="/enquiry" element={<Enquiry />} />
+                    <Route path="/products" element={<Products />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/process" element={<Process />} />
                     <Route path="/certifications" element={<Certifications />} />
-
+                    <Route path="/enquiry" element={<Enquiry />} />
                     <Route path="/products/fruits" element={<Fruits />} />
                     <Route path="/products/vegetables" element={<Vegetables />} />
                     <Route path="/products/spices" element={<Spices />} />

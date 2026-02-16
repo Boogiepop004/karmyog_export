@@ -27,9 +27,9 @@ const Navbar = () => {
     const navLinks = [
         { name: 'Home', href: '/' },
         { name: 'About', href: '/about' },
+        { name: 'Products', href: '/products' },
         { name: 'Process', href: '/process' },
         { name: 'Certifications', href: '/certifications' },
-        // Enquiry removed as text link
     ];
 
     // Helper to determine if we should use simple anchor or Router Link
@@ -76,8 +76,12 @@ const Navbar = () => {
                                         </div>
                                     </div>
                                 ) : (
-                                    <Link to="/" className={`font-main font-bold text-lg md:text-2xl tracking-tighter transition-colors duration-200 ${scrolled || isOpen ? 'text-gray-900' : 'text-white'}`}>
-                                        MONTARA EXIM
+                                    <Link to="/" className="flex items-center">
+                                        <img
+                                            src="/images/logo_main.png"
+                                            alt="Montara Exim"
+                                            className="h-10 md:h-12 w-auto object-contain"
+                                        />
                                     </Link>
                                 )}
                             </div>
