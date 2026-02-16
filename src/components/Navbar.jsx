@@ -84,7 +84,7 @@ const Navbar = () => {
                                         <img
                                             src="/images/logo_main.png"
                                             alt="Montara Exim"
-                                            className="absolute top-1/2 left-0 -translate-y-1/2 h-32 w-auto max-w-none object-contain transition-transform duration-300 origin-left"
+                                            className="absolute top-1/2 left-0 -translate-y-1/2 h-40 w-auto max-w-none object-contain transition-transform duration-300 origin-left"
                                         />
                                     </Link>
                                 )}
@@ -153,7 +153,7 @@ const Navbar = () => {
                         animate={{ opacity: 1, height: 'auto' }}
                         exit={{ opacity: 0, height: 0 }}
                         transition={{ duration: 0.2, ease: "easeInOut" }}
-                        className="fixed top-[72px] left-0 right-0 z-40 bg-white shadow-xl border-t border-gray-100 overflow-hidden md:hidden"
+                        className="fixed top-[64px] left-0 right-0 z-40 bg-white shadow-xl border-t border-gray-100 overflow-hidden md:hidden"
                     >
                         <div className="flex flex-col p-6 space-y-4">
                             {navLinks.map((link) => {
