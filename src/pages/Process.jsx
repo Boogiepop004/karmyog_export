@@ -9,6 +9,7 @@ const Process = () => {
             title: 'Order Sourcing',
             icon: Sprout,
             color: 'green',
+            image: '/images/process/sourcing.jpg',
             desc: 'We source directly from certified partner farms and manufacturers. Our team verifies the origin and quality of raw materials at the source itself.',
             details: ['Direct Farm Procurement', 'Origin Verification', 'Raw Material Inspection']
         },
@@ -17,6 +18,7 @@ const Process = () => {
             title: 'Quality Check & Grading',
             icon: ClipboardCheck,
             color: 'blue',
+            image: '/images/process/quality.jpg',
             desc: 'Every product undergoes rigorous grading and lab testing standards. We ensure compliance with international food safety and quality regulations.',
             details: ['Lab Testing', 'Size & Color Grading', 'Phytosanitary Checks']
         },
@@ -25,6 +27,7 @@ const Process = () => {
             title: 'Packaging',
             icon: Package,
             color: 'orange',
+            image: '/images/process/packaging.jpg', // Placeholder - File missing
             desc: 'We use export-grade packaging materials designed to preserve freshness and prevent damage during transit. Custom branding and labeling are available.',
             details: ['Export-Safe Packing', 'Custom Labeling', 'Vacuum/Modified Atmosphere']
         },
@@ -33,6 +36,7 @@ const Process = () => {
             title: 'Global Logistics',
             icon: Ship,
             color: 'brand-cyan',
+            image: '/images/process/logistics.jpg', // Placeholder - File missing
             desc: 'Our logistics team handles efficient sea or air freight booking, documentation, and customs clearance to ensure timely delivery to your port.',
             details: ['Freight Booking', 'Customs Documentation', 'Real-time Tracking']
         }
@@ -58,17 +62,30 @@ const Process = () => {
                     {steps.map((step, index) => (
                         <div key={index} className={`flex flex-col md:flex-row gap-12 items-center ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
 
-                            {/* Visual Side */}
+                            {/* Visual Side - Now using Images */}
                             <div className="w-full md:w-1/2 relative group">
-                                <div className={`aspect-[4/3] bg-gray-50 rounded-2xl border-2 border-dashed border-${step.color}-200 flex items-center justify-center relative overflow-hidden`}>
-                                    {/* Big Icon Background */}
-                                    <step.icon className={`w-64 h-64 text-${step.color}-500/5 absolute -right-12 -bottom-12 rotate-[-15deg] transition-transform group-hover:scale-110`} />
+                                <div className={`aspect-[4/3] bg-gray-50 rounded-2xl border-2 border-dashed border-${step.color}-200 flex items-center justify-center relative overflow-hidden shadow-lg`}>
 
-                                    <div className={`w-24 h-24 rounded-full bg-${step.color}-50 flex items-center justify-center`}>
-                                        <step.icon className={`w-12 h-12 text-${step.color}-600`} />
+                                    {/* Image with fallbacks */}
+                                    <img
+                                        src={step.image}
+                                        alt={step.title}
+                                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                        onError={(e) => {
+                                            // Fallback to icon if image fails (like for packaging/logistics currently)
+                                            e.target.style.display = 'none';
+                                            e.target.nextSibling.style.display = 'flex';
+                                        }}
+                                    />
+
+                                    {/* Fallback Icon Container (Hidden by default unless image errors) */}
+                                    <div className="hidden absolute inset-0 flex items-center justify-center bg-gray-50">
+                                        <step.icon className={`w-24 h-24 text-${step.color}-400 opacity-50`} />
+                                        <span className="absolute bottom-4 text-xs text-gray-400">Image not found</span>
                                     </div>
+
                                 </div>
-                                <div className="absolute -top-6 -left-6 w-16 h-16 bg-brand-cyan text-white rounded-xl flex items-center justify-center text-2xl font-bold shadow-lg">
+                                <div className="absolute -top-6 -left-6 w-16 h-16 bg-brand-cyan text-white rounded-xl flex items-center justify-center text-2xl font-bold shadow-lg z-10">
                                     {step.id}
                                 </div>
                             </div>
