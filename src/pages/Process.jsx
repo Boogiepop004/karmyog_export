@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ClipboardCheck, Package, Ship, Sprout } from 'lucide-react';
+import PageHero from '../components/PageHero';
 
 const Process = () => {
     const steps = [
@@ -9,7 +10,7 @@ const Process = () => {
             title: 'Order Sourcing',
             icon: Sprout,
             color: 'green',
-            image: '/images/process/sourcing.jpg',
+            image: '/images/process_sourcing.png',
             desc: 'We source directly from certified partner farms and manufacturers. Our team verifies the origin and quality of raw materials at the source itself.',
             details: ['Direct Farm Procurement', 'Origin Verification', 'Raw Material Inspection']
         },
@@ -18,7 +19,7 @@ const Process = () => {
             title: 'Quality Check & Grading',
             icon: ClipboardCheck,
             color: 'blue',
-            image: '/images/process/quality.jpg',
+            image: '/images/process_quality.png',
             desc: 'Every product undergoes rigorous grading and lab testing standards. We ensure compliance with international food safety and quality regulations.',
             details: ['Lab Testing', 'Size & Color Grading', 'Phytosanitary Checks']
         },
@@ -27,7 +28,7 @@ const Process = () => {
             title: 'Packaging',
             icon: Package,
             color: 'orange',
-            image: '/images/process/packaging.jpg', // Placeholder - File missing
+            image: '/images/process_packaging.png',
             desc: 'We use export-grade packaging materials designed to preserve freshness and prevent damage during transit. Custom branding and labeling are available.',
             details: ['Export-Safe Packing', 'Custom Labeling', 'Vacuum/Modified Atmosphere']
         },
@@ -36,24 +37,18 @@ const Process = () => {
             title: 'Global Logistics',
             icon: Ship,
             color: 'brand-cyan',
-            image: '/images/process/logistics.jpg', // Placeholder - File missing
+            image: '/images/process_logistics.png',
             desc: 'Our logistics team handles efficient sea or air freight booking, documentation, and customs clearance to ensure timely delivery to your port.',
             details: ['Freight Booking', 'Customs Documentation', 'Real-time Tracking']
         }
     ];
 
     return (
-        <div className="pt-20 min-h-screen bg-white">
-            {/* Hero Section */}
-            <div className="bg-brand-black text-white py-20 relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-brand-cyan/20 to-transparent pointer-events-none"></div>
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                    <h1 className="text-4xl md:text-6xl font-bold mb-6">Export Process</h1>
-                    <p className="text-xl text-gray-300 max-w-2xl leading-relaxed">
-                        A seamless journey from our farms to your doorstep. We handle every step with precision and care.
-                    </p>
-                </div>
-            </div>
+        <div className="min-h-screen bg-white">
+            <PageHero
+                title="Export Process"
+                subtitle="A seamless journey from our farms to your doorstep. We handle every step with precision and care."
+            />
 
             {/* Main Content */}
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -62,28 +57,14 @@ const Process = () => {
                     {steps.map((step, index) => (
                         <div key={index} className={`flex flex-col md:flex-row gap-12 items-center ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
 
-                            {/* Visual Side - Now using Images */}
+                            {/* Visual Side - Now with actual images */}
                             <div className="w-full md:w-1/2 relative group">
-                                <div className={`aspect-[4/3] bg-gray-50 rounded-2xl border-2 border-dashed border-${step.color}-200 flex items-center justify-center relative overflow-hidden shadow-lg`}>
-
-                                    {/* Image with fallbacks */}
+                                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg border border-gray-100">
                                     <img
                                         src={step.image}
                                         alt={step.title}
-                                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                                        onError={(e) => {
-                                            // Fallback to icon if image fails (like for packaging/logistics currently)
-                                            e.target.style.display = 'none';
-                                            e.target.nextSibling.style.display = 'flex';
-                                        }}
+                                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                                     />
-
-                                    {/* Fallback Icon Container (Hidden by default unless image errors) */}
-                                    <div className="hidden absolute inset-0 flex items-center justify-center bg-gray-50">
-                                        <step.icon className={`w-24 h-24 text-${step.color}-400 opacity-50`} />
-                                        <span className="absolute bottom-4 text-xs text-gray-400">Image not found</span>
-                                    </div>
-
                                 </div>
                                 <div className="absolute -top-6 -left-6 w-16 h-16 bg-brand-cyan text-white rounded-xl flex items-center justify-center text-2xl font-bold shadow-lg z-10">
                                     {step.id}
