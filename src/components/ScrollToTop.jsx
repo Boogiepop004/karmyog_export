@@ -1,11 +1,13 @@
-import { useEffect } from 'react';
+import { useLayoutEffect } from 'react';
 import { useLocation, useNavigationType } from 'react-router-dom';
 
 const ScrollToTop = () => {
     const { pathname } = useLocation();
     const action = useNavigationType();
 
-    useEffect(() => {
+    // useLayoutEffect ensures scroll resets BEFORE the browser paints,
+    // preventing visual blinks in the Navbar (title flash, background flash).
+    useLayoutEffect(() => {
         if (action !== 'POP') {
             window.scrollTo(0, 0);
         }
