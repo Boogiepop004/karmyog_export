@@ -10,7 +10,7 @@ const riceProducts = [
     { id: 4, name: 'Sona Masoori Rice (Short Grain)', image: '/images/product-sona-masoori.jpg' },
     { id: 5, name: 'Pusa Basmati Rice (Raw, Steam)', image: '/images/product-pusa-basmati.png' },
     { id: 6, name: 'Ponni Rice (Thanjavur Variety)', image: '/images/product-ponni-rice.jpg' },
-    { id: 7, name: 'Traditional Basmati Rice (Dehraduns)', image: '/images/product-traditional-basmati.png' },
+    { id: 7, name: 'Traditional Basmati Rice', image: '/images/product-traditional-basmati.png' },
     { id: 8, name: 'Broken Rice (100% Broken - A1)', image: '/images/product-broken-rice.jpg' },
 ];
 

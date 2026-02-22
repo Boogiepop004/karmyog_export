@@ -13,7 +13,7 @@ const spices = [
     { id: 7, name: 'Fennel (Saunf - Singapore/Europe)', image: '/images/spices/product_fennel.jpg' },
     { id: 8, name: 'Cloves (Lal Pari, Hand Picked)', image: '/images/spices/product_cloves.png' },
     { id: 9, name: 'Garlic (Ooty, Desi - Fresh/Dehydrated)', image: '/images/spices/product_garlic.png' },
-    { id: 10, name: 'Turmeric Fingers (Salem, Nizamabad)', image: '/images/spices/product_turmeric.jpg' },
+    { id: 10, name: 'Turmeric', image: '/images/spices/product_turmeric.jpg' },
     { id: 11, name: 'Ginger (Fresh Washed/Dry)', image: '/images/spices/product_ginger.jpg' },
     { id: 12, name: 'Turmeric Root (Mother Bulb)', image: '/images/spices/product_turmeric_root.jpg' },
 ];
