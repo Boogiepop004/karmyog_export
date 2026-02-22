@@ -7,11 +7,11 @@ const ScrollToTop = () => {
 
     // useLayoutEffect ensures scroll resets BEFORE the browser paints,
     // preventing visual blinks in the Navbar (title flash, background flash).
+    // Always reset scroll on any route change — the POP skip was causing
+    // a visible blink when using the back button on product pages.
     useLayoutEffect(() => {
-        if (action !== 'POP') {
-            window.scrollTo(0, 0);
-        }
-    }, [action, pathname]);
+        window.scrollTo(0, 0);
+    }, [pathname]);
 
     return null;
 };
