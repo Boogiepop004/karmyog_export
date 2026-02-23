@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const fruits = [
     { id: 1, name: 'Pomegranate (Bhagawa, Ganesh)', image: '/images/fruits/product_pomegranate_new.png' },
-    { id: 2, name: 'Dry Semi Husked Coconut (Pollachi)', image: '/images/fruits/product_coconut_dry_real.png' }, // User provided real image
+    { id: 2, name: 'Dry Semi Husked Coconut', image: '/images/fruits/product_coconut_dry_real.png' }, // User provided real image
     { id: 3, name: 'G9 Banana (Cavendish Green)', image: '/images/fruits/product_banana_g9_green_real.png' }, // User provided real image
     { id: 4, name: 'G9 Banana (Cavendish Yellow)', image: '/images/fruits/product_banana_g9_yellow_new.jpg' },
     { id: 5, name: 'Banana Leaf (Fresh Export Quality)', image: '/images/fruits/product_banana_leaf_real.png' },
