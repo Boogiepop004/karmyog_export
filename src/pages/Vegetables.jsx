@@ -4,16 +4,16 @@ import { motion } from 'framer-motion';
 const vegetables = [
     { id: 1, name: 'Onion (Nashik Red, Pink)', image: '/images/product-onion.jpg' },
     { id: 2, name: 'Elephant Yam (Suran - Gajendra)', image: '/images/vegetables/product_elephant_yam_suran.png' },
-    { id: 3, name: 'Green Chilli (G4, Sitara)', image: '/images/vegetables/product_green_chilli_real.jpg' },
+    { id: 3, name: 'Green Chilli (G4, Sitara)', image: '/images/vegetables/product_green_chilli_new.jpg' },
     { id: 4, name: 'Lime (Kagzi - Thin Skinned)', image: '/images/vegetables/product_lime.png' },
     { id: 7, name: 'Tomato (Vaishali, Rupali)', image: '/images/vegetables/product_tomato.jpg' },
     { id: 9, name: 'Okra (Bhindi)', image: '/images/vegetables/product_okra_bhindi.png' },
     { id: 10, name: 'Bottle Gourd (Loki)', image: '/images/product-bottle-gourd.png' },
-    { id: 11, name: 'Bitter Gourd (Dark Green)', image: '/images/vegetables/product_bitter_gourd_real.jpg' },
-    { id: 12, name: 'Ridge Gourd (Luffa)', image: '/images/vegetables/product_ridge_gourd_real.jpg' },
+    { id: 11, name: 'Bitter Gourd (Dark Green)', image: '/images/vegetables/product_bitter_gourd_new.png' },
+    { id: 12, name: 'Ridge Gourd (Luffa)', image: '/images/vegetables/product_ridge_gourd_new.jpg' },
     { id: 13, name: 'Ivy Gourd (Tindora)', image: '/images/product-ivy-gourd.jpg' },
     { id: 14, name: 'Cluster Beans (Guar)', image: '/images/product-cluster-beans.jpg' },
-    { id: 15, name: 'Drumstick (PKM-1, ODC)', image: '/images/vegetables/product_drumstick_real.jpg' },
+    { id: 15, name: 'Drumstick (PKM-1, ODC)', image: '/images/vegetables/product_drumstick_new.jpg' },
 ];
 
 const Vegetables = () => {
