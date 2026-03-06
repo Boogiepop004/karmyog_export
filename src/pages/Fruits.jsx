@@ -21,6 +21,7 @@ const fruits = [
     { id: 15, name: 'Indian Gooseberry (Amla - Banarasi)', image: '/images/fruits/product_gooseberry_1769751063015.png' },
     { id: 16, name: 'Pineapple', image: '/images/fruits/product_pineapple.png' },
     { id: 17, name: 'Watermelon', image: '/images/fruits/product_watermelon.jpg' },
+    { id: 18, name: 'Kesar Mango', image: '/images/fruits/product_mango_kesar.png' },
 ];
 
 const Fruits = () => {
