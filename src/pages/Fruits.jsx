@@ -9,7 +9,7 @@ const fruits = [
     { id: 3, name: 'G9 Banana (Cavendish Green)', image: '/images/fruits/product_banana_g9_green_real.png' }, // User provided real image
     { id: 4, name: 'G9 Banana (Cavendish Yellow)', image: '/images/fruits/product_banana_g9_yellow_new.jpg' },
     { id: 5, name: 'Banana Leaf (Fresh Export Quality)', image: '/images/fruits/product_banana_leaf_real.png' },
-    { id: 6, name: 'Green Grapes (Thompson Seedless, Sonaka)', image: '/images/fruits/product_grapes_green_new.png' },
+    { id: 6, name: 'Green Grapes (Thompson Seedless, Sonaka)', image: '/images/fruits/product_grapes_green_real.jpg' },
     { id: 7, name: 'Red Globe Grapes (Jumbo)', image: '/images/fruits/product_grapes_red_new.png' },
     { id: 8, name: 'Black Grapes (Sharad Seedless)', image: '/images/fruits/product_grapes_black_new.png' },
     { id: 9, name: 'Guava (L-49, Allahabad Safeda)', image: '/images/fruits/product_guava_new.jpg' },
@@ -20,7 +20,7 @@ const fruits = [
     { id: 14, name: 'Rasthali Banana (Silk)', image: '/images/fruits/product_banana_rk_1769751047065.png' },
     { id: 15, name: 'Indian Gooseberry (Amla - Banarasi)', image: '/images/fruits/product_gooseberry_1769751063015.png' },
     { id: 16, name: 'Pineapple', image: '/images/fruits/product_pineapple.png' },
-    { id: 17, name: 'Watermelon', image: '/images/fruits/product_watermelon.jpg' },
+    { id: 17, name: 'Watermelon', image: '/images/fruits/product_watermelon_new.jpg' },
     { id: 18, name: 'Kesar Mango', image: '/images/fruits/product_mango_kesar.png' },
 ];
 
