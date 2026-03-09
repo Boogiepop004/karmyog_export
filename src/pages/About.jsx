@@ -31,11 +31,14 @@ const About = () => {
                         </div>
                     </div>
                     <div className="relative">
-                        <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl bg-gray-100">
-                            {/* Placeholder for About Image - could use a generic office or farm image */}
-                            <div className="w-full h-full bg-gray-200 flex items-center justify-center text-gray-400">
-                                <span className="text-lg">About Us Image</span>
-                            </div>
+                        <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl bg-gray-100 relative group">
+                            <img
+                                src="/images/about_us_new.jpg"
+                                alt="Montara Exim Values and Mission"
+                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            />
+                            {/* Overlay gradient for text readability if needed later */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                         </div>
                         {/* Floating Stat Card */}
                         <div className="absolute -bottom-8 -left-8 bg-white p-6 rounded-xl shadow-xl border border-gray-100 hidden md:block">
