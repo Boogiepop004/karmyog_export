@@ -12,7 +12,7 @@ const fruits = [
     { id: 6, name: 'Green Grapes (Thompson Seedless, Sonaka)', image: '/images/fruits/product_grapes_green_real.jpg' },
     { id: 7, name: 'Red Globe Grapes (Jumbo)', image: '/images/fruits/product_grapes_red_new.png' },
     { id: 8, name: 'Black Grapes (Sharad Seedless)', image: '/images/fruits/product_grapes_black_new.png' },
-    { id: 9, name: 'Guava (L-49, Allahabad Safeda)', image: '/images/fruits/product_guava_new.jpg' },
+    { id: 9, name: 'Guava', image: '/images/fruits/product_guava_new.jpg' },
     { id: 10, name: 'Badami Mango (Alphonso of South)', image: '/images/fruits/product_mango_badami_1769750981536.png' },
     { id: 11, name: 'Alphonso Mango (Devgad, Ratnagiri)', image: '/images/fruits/product_mango_alphonso_1769750996775.png' },
     { id: 12, name: 'Rajapuri Mango (Premium Large)', image: '/images/fruits/product_mango_rajapuri_1769751012387.png' },
