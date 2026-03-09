@@ -17,7 +17,7 @@ const fruits = [
     { id: 11, name: 'Alphonso Mango (Devgad, Ratnagiri)', image: '/images/fruits/product_mango_alphonso_1769750996775.png' },
     { id: 12, name: 'Rajapuri Mango (Premium Large)', image: '/images/fruits/product_mango_rajapuri_1769751012387.png' },
     { id: 13, name: 'Yelakki Banana (Tiny, Sweet)', image: '/images/fruits/product_banana_yb_1769751030918.png' },
-    { id: 14, name: 'Rasthali Banana (Silk)', image: '/images/fruits/product_banana_rk_1769751047065.png' },
+    { id: 14, name: 'Rasthali Banana (Silk)', image: '/images/fruits/product_banana_rk_real.png' },
     { id: 15, name: 'Indian Gooseberry (Amla - Banarasi)', image: '/images/fruits/product_gooseberry_1769751063015.png' },
     { id: 16, name: 'Pineapple', image: '/images/fruits/product_pineapple.png' },
     { id: 17, name: 'Watermelon', image: '/images/fruits/product_watermelon_new.jpg' },

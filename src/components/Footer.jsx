@@ -19,9 +19,7 @@ const Footer = () => {
                         <div className="flex gap-4">
                             {[
                                 { Icon: Linkedin, href: "https://www.linkedin.com/in/jasmin-gondaliya-88a547232/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
-                                { Icon: Instagram, href: "https://www.instagram.com/montaraexim?igsh=a2tmOXhyZGZqYTJ6&utm_source=qr" },
-                                { Icon: Facebook, href: "#" },
-                                { Icon: Twitter, href: "#" }
+                                { Icon: Instagram, href: "https://www.instagram.com/montaraexim?igsh=a2tmOXhyZGZqYTJ6&utm_source=qr" }
                             ].map((social, idx) => (
                                 <a key={idx} href={social.href} target={social.href !== "#" ? "_blank" : "_self"} rel={social.href !== "#" ? "noopener noreferrer" : ""} className="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-white hover:bg-brand-cyan hover:border-brand-cyan transition-all">
                                     <social.Icon size={18} />
