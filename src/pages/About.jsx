@@ -35,7 +35,7 @@ const About = () => {
                             <img
                                 src="/images/about_us_new.jpg"
                                 alt="Montara Exim Values and Mission"
-                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                             />
                             {/* Overlay gradient for text readability if needed later */}
                             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
