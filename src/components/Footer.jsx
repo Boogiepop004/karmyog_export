@@ -19,7 +19,7 @@ const Footer = () => {
                         <div className="flex gap-4">
                             {[
                                 { Icon: Linkedin, href: "https://www.linkedin.com/in/jasmin-gondaliya-88a547232/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
-                                { Icon: Instagram, href: "#" },
+                                { Icon: Instagram, href: "https://www.instagram.com/montaraexim?igsh=a2tmOXhyZGZqYTJ6&utm_source=qr" },
                                 { Icon: Facebook, href: "#" },
                                 { Icon: Twitter, href: "#" }
                             ].map((social, idx) => (

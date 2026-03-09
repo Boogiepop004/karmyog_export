@@ -37,7 +37,7 @@ const Enquiry = () => {
     };
 
     // Configuration - EASY TO CHANGE
-    const BUSINESS_PHONE_NUMBER = '919054398743'; // Format: CountryCode + Number (No + or spaces)
+    const BUSINESS_PHONE_NUMBER = '918849417264'; // Format: CountryCode + Number (No + or spaces)
     const BUSINESS_EMAIL = 'info@karmyog.com'; // Replace with your actual email
 
     const formatMessage = () => {
