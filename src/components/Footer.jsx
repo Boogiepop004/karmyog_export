@@ -19,7 +19,19 @@ const Footer = () => {
                         <div className="flex gap-4">
                             {[
                                 { Icon: Linkedin, href: "https://www.linkedin.com/in/jasmin-gondaliya-88a547232/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
-                                { Icon: Instagram, href: "https://www.instagram.com/montaraexim?igsh=a2tmOXhyZGZqYTJ6&utm_source=qr" }
+                                { Icon: Instagram, href: "https://www.instagram.com/montaraexim?igsh=a2tmOXhyZGZqYTJ6&utm_source=qr" },
+                                {
+                                    // Use Phone icon directly if Whatsapp is not imported (or use Whatsapp from lucide-react if added at the top)
+                                    // By user instructions: link to the api with number +91 884 941 7264
+                                    Icon: function WhatsappIcon(props) {
+                                        return (
+                                            <svg xmlns="http://www.w3.org/漂2000/svg" width={props.size} height={props.size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                            </svg>
+                                        );
+                                    },
+                                    href: "https://wa.me/918849417264"
+                                }
                             ].map((social, idx) => (
                                 <a key={idx} href={social.href} target={social.href !== "#" ? "_blank" : "_self"} rel={social.href !== "#" ? "noopener noreferrer" : ""} className="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-white hover:bg-brand-cyan hover:border-brand-cyan transition-all">
                                     <social.Icon size={18} />
