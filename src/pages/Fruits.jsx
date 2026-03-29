@@ -28,14 +28,15 @@ const FruitCard = ({ fruit }) => {
     const [currentImage, setCurrentImage] = useState(0);
 
     const isSlider = fruit.images && fruit.images.length > 1;
-    const currentSrc = isSlider ? fruit.images[currentImage] : fruit.image;
 
     const nextImage = (e) => {
+        e.preventDefault();
         e.stopPropagation();
         setCurrentImage((prev) => (prev + 1) % fruit.images.length);
     };
 
     const prevImage = (e) => {
+        e.preventDefault();
         e.stopPropagation();
         setCurrentImage((prev) => (prev - 1 + fruit.images.length) % fruit.images.length);
     };
@@ -44,29 +45,44 @@ const FruitCard = ({ fruit }) => {
         <div className="group cursor-default">
             {/* Image Container - OBJECT COVER for alignment */}
             <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-gray-50 mb-6 relative shadow-sm group-hover:shadow-md transition-all duration-300">
-                <img
-                    src={currentSrc}
-                    alt={fruit.name}
-                    className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                />
+                {isSlider ? (
+                    fruit.images.map((imgSrc, idx) => (
+                        <div 
+                            key={idx} 
+                            className={`absolute inset-0 w-full h-full transition-opacity duration-500 ease-in-out ${idx === currentImage ? 'opacity-100 z-0' : 'opacity-0 -z-10'}`}
+                        >
+                            <img
+                                src={imgSrc}
+                                alt={`${fruit.name} ${idx + 1}`}
+                                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                            />
+                        </div>
+                    ))
+                ) : (
+                    <img
+                        src={fruit.image}
+                        alt={fruit.name}
+                        className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                    />
+                )}
                 
                 {isSlider && (
                     <>
                         <button 
                             onClick={prevImage}
-                            className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-1.5 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity z-10"
+                            className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-1.5 rounded-full shadow-md z-10 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity"
                         >
                             <ChevronLeft size={20} />
                         </button>
                         <button 
                             onClick={nextImage}
-                            className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-1.5 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity z-10"
+                            className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-1.5 rounded-full shadow-md z-10 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity"
                         >
                             <ChevronRight size={20} />
                         </button>
                         <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1 z-10">
                             {fruit.images.map((_, idx) => (
-                                <div key={idx} className={`w-1.5 h-1.5 rounded-full overflow-hidden ${idx === currentImage ? 'bg-white' : 'bg-white/50'}`} />
+                                <div key={idx} className={`w-1.5 h-1.5 rounded-full overflow-hidden transition-colors ${idx === currentImage ? 'bg-white' : 'bg-white/50'}`} />
                             ))}
                         </div>
                     </>
