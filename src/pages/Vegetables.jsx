@@ -42,7 +42,7 @@ const VegetableCard = ({ veg }) => {
                     veg.images.map((imgSrc, idx) => (
                         <div 
                             key={idx} 
-                            className={`absolute inset-0 w-full h-full transition-opacity duration-500 ease-in-out ${idx === currentImage ? 'opacity-100 z-0' : 'opacity-0 -z-10'}`}
+                            className={`absolute inset-0 w-full h-full transition-opacity duration-200 ease-in-out ${idx === currentImage ? 'opacity-100 z-0' : 'opacity-0 -z-10'}`}
                         >
                             <img
                                 src={imgSrc}
@@ -63,17 +63,17 @@ const VegetableCard = ({ veg }) => {
                     <>
                         <button 
                             onClick={prevImage}
-                            className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-1.5 rounded-full shadow-md z-10 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity"
+                            className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 p-1.5 rounded-full shadow-md z-10 opacity-100 touch-manipulation active:scale-95 transition-transform"
                         >
                             <ChevronLeft size={20} />
                         </button>
                         <button 
                             onClick={nextImage}
-                            className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-1.5 rounded-full shadow-md z-10 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity"
+                            className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 p-1.5 rounded-full shadow-md z-10 opacity-100 touch-manipulation active:scale-95 transition-transform"
                         >
                             <ChevronRight size={20} />
                         </button>
-                        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1 z-10">
+                        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1 z-10 pointer-events-none">
                             {veg.images.map((_, idx) => (
                                 <div key={idx} className={`w-1.5 h-1.5 rounded-full overflow-hidden transition-colors ${idx === currentImage ? 'bg-white' : 'bg-white/50'}`} />
                             ))}
