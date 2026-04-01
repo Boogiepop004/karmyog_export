@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const vegetables = [
     { id: 1, name: 'Onion (Nashik Red, Pink)', image: '/images/product-onion.jpg' },
@@ -7,14 +8,89 @@ const vegetables = [
     { id: 3, name: 'Green Chilli (G4, Sitara)', image: '/images/vegetables/product_green_chilli_new.jpg' },
     { id: 4, name: 'Lime (Kagzi - Thin Skinned)', image: '/images/vegetables/product_lime.png' },
     { id: 7, name: 'Tomato (Vaishali, Rupali)', image: '/images/vegetables/product_tomato.jpg' },
-    { id: 9, name: 'Okra (Bhindi)', image: '/images/vegetables/product_okra_real.jpg' },
-    { id: 10, name: 'Bottle Gourd (Loki)', image: '/images/vegetables/product_bottle_gourd_new.jpg' },
+    { id: 9, name: 'Okra (Bhindi)', images: ['/images/vegetables/product_okra_real.jpg', '/images/vegetables/product_okra_carousel.png'] },
+    { id: 10, name: 'Bottle Gourd (Loki)', images: ['/images/vegetables/product_bottle_gourd_new.jpg', '/images/vegetables/product_gourd_bottle_carousel.png'] },
     { id: 11, name: 'Bitter Gourd (Dark Green)', image: '/images/vegetables/product_bitter_gourd_new.png' },
     { id: 12, name: 'Ridge Gourd (Luffa)', image: '/images/vegetables/product_ridge_gourd_new.jpg' },
     { id: 13, name: 'Ivy Gourd (Tindora)', image: '/images/product-ivy-gourd.jpg' },
-    { id: 14, name: 'Cluster Beans (Guar)', image: '/images/vegetables/product_cluster_beans_new.jpg' },
+    { id: 14, name: 'Cluster Beans (Guar)', images: ['/images/vegetables/product_cluster_beans_new.jpg', '/images/vegetables/product_beans_guar_carousel.png'] },
     { id: 15, name: 'Drumstick (PKM-1, ODC)', image: '/images/vegetables/product_drumstick_new.jpg' },
 ];
+
+const VegetableCard = ({ veg }) => {
+    const [currentImage, setCurrentImage] = useState(0);
+
+    const isSlider = veg.images && veg.images.length > 1;
+
+    const nextImage = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        setCurrentImage((prev) => (prev + 1) % veg.images.length);
+    };
+
+    const prevImage = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        setCurrentImage((prev) => (prev - 1 + veg.images.length) % veg.images.length);
+    };
+
+    return (
+        <div className="group cursor-default">
+            {/* Image Container - OBJECT COVER for alignment */}
+            <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-gray-50 mb-6 relative shadow-sm group-hover:shadow-md transition-all duration-300">
+                {isSlider ? (
+                    veg.images.map((imgSrc, idx) => (
+                        <div 
+                            key={idx} 
+                            className={`absolute inset-0 w-full h-full transition-opacity duration-500 ease-in-out ${idx === currentImage ? 'opacity-100 z-0' : 'opacity-0 -z-10'}`}
+                        >
+                            <img
+                                src={imgSrc}
+                                alt={`${veg.name} ${idx + 1}`}
+                                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                            />
+                        </div>
+                    ))
+                ) : (
+                    <img
+                        src={veg.image}
+                        alt={veg.name}
+                        className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                    />
+                )}
+                
+                {isSlider && (
+                    <>
+                        <button 
+                            onClick={prevImage}
+                            className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-1.5 rounded-full shadow-md z-10 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity"
+                        >
+                            <ChevronLeft size={20} />
+                        </button>
+                        <button 
+                            onClick={nextImage}
+                            className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-1.5 rounded-full shadow-md z-10 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity"
+                        >
+                            <ChevronRight size={20} />
+                        </button>
+                        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1 z-10">
+                            {veg.images.map((_, idx) => (
+                                <div key={idx} className={`w-1.5 h-1.5 rounded-full overflow-hidden transition-colors ${idx === currentImage ? 'bg-white' : 'bg-white/50'}`} />
+                            ))}
+                        </div>
+                    </>
+                )}
+            </div>
+
+            {/* Content - Simple Name */}
+            <div className="text-center group-hover:-translate-y-1 transition-transform duration-300">
+                <h3 className="text-lg font-bold text-gray-900 tracking-wide uppercase">
+                    {veg.name}
+                </h3>
+            </div>
+        </div>
+    );
+};
 
 const Vegetables = () => {
     const [searchTerm, setSearchTerm] = useState('');
@@ -50,26 +126,7 @@ const Vegetables = () => {
                 {/* Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-12">
                     {filteredVegetables.map((veg, index) => (
-                        <div
-                            key={veg.id}
-                            className="group cursor-default"
-                        >
-                            {/* Image Container */}
-                            <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-gray-50 mb-6 relative shadow-sm group-hover:shadow-md transition-all duration-300">
-                                <img
-                                    src={veg.image}
-                                    alt={veg.name}
-                                    className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                                />
-                            </div>
-
-                            {/* Content */}
-                            <div className="text-center group-hover:-translate-y-1 transition-transform duration-300">
-                                <h3 className="text-lg font-bold text-gray-900 tracking-wide uppercase">
-                                    {veg.name}
-                                </h3>
-                            </div>
-                        </div>
+                        <VegetableCard key={veg.id} veg={veg} />
                     ))}
                 </div>
 

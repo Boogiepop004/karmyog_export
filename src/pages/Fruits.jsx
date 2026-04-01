@@ -9,7 +9,7 @@ const fruits = [
     { id: 3, name: 'G9 Banana (Cavendish Green)', image: '/images/fruits/product_banana_g9_green_real.png' }, // User provided real image
     { id: 4, name: 'G9 Banana (Cavendish Yellow)', image: '/images/fruits/product_banana_g9_yellow_new.jpg' },
     { id: 5, name: 'Banana Leaf (Fresh Export Quality)', image: '/images/fruits/product_banana_leaf_real.png' },
-    { id: 6, name: 'Green Grapes (Thompson Seedless, Sonaka)', image: '/images/fruits/product_grapes_green_real.jpg' },
+    { id: 6, name: 'Green Grapes (Thompson Seedless, Sonaka)', images: ['/images/fruits/product_grapes_green_real.jpg', '/images/fruits/product_grapes_green_carousel.png'] },
     { id: 7, name: 'Red Globe Grapes (Jumbo)', image: '/images/fruits/product_grapes_red_new.png' },
     { id: 8, name: 'Black Grapes (Sharad Seedless)', image: '/images/fruits/product_grapes_black_new.png' },
     { id: 9, name: 'Guava', image: '/images/fruits/product_guava_new.jpg' },
